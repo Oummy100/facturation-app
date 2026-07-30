@@ -1,48 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
     <title>Facturation</title>
 </head>
-<body>
-    <div class="bg-linear-to-b from-blue-900 to-blue-950 text-white">
+
+<body class="bg-blue-50">
+    <div class="bg-linear-to-b from-blue-900 to-blue-950 text-white fixed left-0 top-0 right-0 z-50">
         <div class="flex justify-between p-3 border-b border-gray-400">
-        <div>
-            <h1 class="text-2xl font-bold">Facturation-APP</h1>
-        </div>
-        <div class="flex gap-3">
-            <div class="flex items-center">
-                <div><i class="fa-solid fa-circle-question"></i></div>
-                <p>Aide</p>
+            <div>
+                <h1 class="text-2xl font-bold">Facturation-APP</h1>
             </div>
-            <div class="flex justify-between gap-3 items-center">
-                <i class="fa-solid fa-calendar-day"></i>
-                <i class="fa-solid fa-shop"></i>
-                <i class="fa-solid fa-gear"></i>
+            <div class="flex gap-3">
+                <div class="flex items-center">
+                    <div><i class="fa-solid fa-circle-question"></i></div>
+                    <p>Aide</p>
+                </div>
+                <div class="flex justify-between gap-3 items-center">
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <i class="fa-solid fa-shop"></i>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm lg:hidden">
+            <details class="lg:hidden text-white">
+                <summary class="cursor-pointer text-3xl">
+                    ☰ <span class="text-xl">Menu</span>
+                </summary>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 p-3 gap-6">
+
+
+                    <div class=" md:border-r border-gray-400">
+                        <p class="mb-2 text-gray-400">PRODUCTIVITÉ</p>
+                        <div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-chart-line"></i>
+                                <p>Analyse</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i>
+                                <p>Taches</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-rectangle-list"></i>
+                                <p>Projets</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-clock"></i>
+                                <p>Suivi du temps</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" lg:border-r border-gray-400 md:pl-8">
+                        <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
+                        <div>
+                            <div><a class="flex gap-2 items-center" href=""><i class="fa-solid fa-file-import"></i>
+                                    <p>Facturation</p>
+                                </a></div>
+                            <div><a class="flex gap-2 items-center" href=""><i class="ri-folder-user-line text-xl"></i>
+                                    <p>Clients</p>
+                                </a></div>
+                            <div><a class="flex gap-2 items-center" href=""><i class="fa-regular fa-rectangle-list"></i>
+                                    <p>Articles</p>
+                                </a></div>
+                        </div>
+                    </div>
+
+                    <div class=" md:border-r border-gray-400 lg:pl-8">
+                        <p class="mb-2 text-gray-400">COMPTABILITÉ</p>
+                        <div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-building-columns"></i>
+                                <p>Banque</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-book"></i>
+                                <p>Livres</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-briefcase"></i>
+                                <p>Déclarations</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-file-lines"></i>
+                                <p>TVA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" md:pl-8">
+                        <p class="mb-2 text-gray-400">ALLER PLUS LOIN</p>
+                        <div>
+                            <div class="flex gap-8">
+                                <div class="flex gap-2 items-center"><i class="fa-solid fa-tags"></i>
+                                    <p>CE des Indeps</p>
+                                </div>
+                                <div class="flex gap-2 items-center"><i class="fa-solid fa-shop"></i>
+                                    <p>Store</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-user-group"></i>
+                                <p>Parrainage</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-link"></i>
+                                <p>Intégrations</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-cloud-arrow-down"></i>
+                                <p>Exports</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+        </div>
+
+        <div class="lg:grid md:grid-cols-2 lg:grid-cols-4 p-3 gap-6 hidden">
+
+
+            <div class=" md:border-r border-gray-400">
+                <p class="mb-2 text-gray-400">PRODUCTIVITÉ</p>
+                <div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-chart-line"></i>
+                        <p>Analyse</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i>
+                        <p>Taches</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-rectangle-list"></i>
+                        <p>Projets</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-clock"></i>
+                        <p>Suivi du temps</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" lg:border-r border-gray-400 md:pl-8">
+                <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
+                <div>
+                    <div><a class="flex gap-2 items-center" href=""><i class="fa-solid fa-file-import"></i>
+                            <p>Facturation</p>
+                        </a></div>
+                    <div><a class="flex gap-2 items-center" href=""><i class="ri-folder-user-line text-xl"></i>
+                            <p>Clients</p>
+                        </a></div>
+                    <div><a class="flex gap-2 items-center" href=""><i class="fa-regular fa-rectangle-list"></i>
+                            <p>Articles</p>
+                        </a></div>
+                </div>
+            </div>
+
+            <div class=" md:border-r border-gray-400 lg:pl-8">
+                <p class="mb-2 text-gray-400">COMPTABILITÉ</p>
+                <div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-building-columns"></i>
+                        <p>Banque</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-book"></i>
+                        <p>Livres</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-briefcase"></i>
+                        <p>Déclarations</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-file-lines"></i>
+                        <p>TVA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" md:pl-8">
+                <p class="mb-2 text-gray-400">ALLER PLUS LOIN</p>
+                <div>
+                    <div class="flex gap-8">
+                        <div class="flex gap-2 items-center"><i class="fa-solid fa-tags"></i>
+                            <p>CE des Indeps</p>
+                        </div>
+                        <div class="flex gap-2 items-center"><i class="fa-solid fa-shop"></i>
+                            <p>Store</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-user-group"></i>
+                        <p>Parrainage</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-link"></i>
+                        <p>Intégrations</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-cloud-arrow-down"></i>
+                        <p>Exports</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="p-3">
-        <div class="border-r border-gray-400">
-            <p class="mb-2 text-gray-400">Productivity</p>
-            <div>
-                <div class="flex gap-2 items-center"><i class="fa-solid fa-chart-line"></i> <p>Analyse</p></div>
-                <div class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i> <p>Taches</p></div>
-                <div class="flex gap-2 items-center"><i class="fa-regular fa-rectangle-list"></i> <p>Projets</p></div>
-                <div class="flex gap-2 items-center"><i class="fa-regular fa-clock"></i> <p>Suivi du temps</p></div>
+    <section class="lg:mt-60 mx-3 mt-42 md:mt-35">
+        <div class="px-10">
+            <p class="text-2xl font-bold">Bonjour User</p>
+        </div>
+
+        <div class="grid grid-cols-2 gap-20">
+            <div class="col-span-2 md:col-span-1 md:ml-20 mt-4 bg-white p-4 rounded ">
+                <p class="font-bold">Statistique des facturations</p>
+                <p>Faites glisser votre souris au dessus du graphique pour plus de détails</p>
+
+                <div class="flex flex-col lg:flex-row gap-7">
+                    <svg class="mt-4" width="200px" height="200px" viewBox="0 0 2253.00 2253.00" version="1.1"
+                        xml:space="preserve"
+                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
+                        fill="#000000" transform="rotate(0)" stroke="#000000" id="svg12" sodipodi:docname="Doughnut.svg"
+                        inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <defs id="defs16" />
+                        <sodipodi:namedview id="namedview14" pagecolor="#ffffff" bordercolor="#000000"
+                            borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0"
+                            inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showgrid="false"
+                            inkscape:zoom="0.99373237" inkscape:cx="-6.5409965" inkscape:cy="128.80732"
+                            inkscape:window-width="1600" inkscape:window-height="837" inkscape:window-x="-8"
+                            inkscape:window-y="-8" inkscape:window-maximized="1"
+                            inkscape:current-layer="SVGRepo_iconCarrier" />
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                            stroke-width="4.506" />
+                        <g id="SVGRepo_iconCarrier">
+                            <rect id="donut_chart" x="1.997" y="0" width="2250" height="2250" style="fill:none;" />
+                            <path
+                                d="M1147.83,208.333c-517.767,0 -937.5,419.733 -937.5,937.5c-0,428.307 290.274,802.155 705.228,908.271l116.136,-454.135c-207.477,-53.058 -352.614,-239.982 -352.614,-454.136c-0,-258.883 209.866,-468.75 468.75,-468.75l-0,-468.75Z"
+                                style="fill:#20406f;stroke:#202020;stroke-width:0.02253;fill-opacity:1" id="path5" />
+                            <path
+                                d="M1997.49,749.576c-153.977,-330.174 -485.321,-541.243 -849.663,-541.243l-0,468.704c182.171,0 347.843,105.535 424.832,270.622l424.831,-198.083Z"
+                                style="fill:#b63816;stroke:#202020;stroke-width:0.02253;" id="path7" />
+                            <path
+                                d="M905.188,2051.39c500.124,134.008 1014.19,-162.788 1148.2,-662.913c64.353,-240.168 30.664,-496.064 -93.656,-711.393l-405.95,234.375c62.16,107.665 79.005,235.613 46.828,355.697c-67.003,250.062 -324.036,398.46 -574.099,331.456l-121.321,452.778Z"
+                                style="fill:#2dc338;stroke:#202020;stroke-width:0.02253;" id="path9" />
+                        </g>
+                    </svg>
+                    <div class="flex justify-center flex-col gap-6">
+                        <p class="flex items-center gap-3"><span class="inline-block w-7 h-7 orange"></span> <span>En
+                                attente</span></p>
+                        <p class="flex items-center gap-3"><span class="inline-block w-7 h-7 bleu"></span> <span>En
+                                attente</span></p>
+                        <p class="flex items-center gap-3"><span class="inline-block w-7 h-7 vert"></span>
+                            <span>Finalisé</span>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <div class="flex gap-2 items-center"><a href=""><i class="fa-solid fa-file-import"></i> <p>Facturation</p></a></div>
-                <div class="flex gap-2 items-center"><a href=""><i class="fa-regular fa-circle-check"></i> <p>Clients</p></a></div>
-                <div class="flex gap-2 items-center"><a href=""><i class="fa-regular fa-rectangle-list"></i> <p>Articles</p></a></div>
+
+            <div class="col-span-2 md:col-span-1 mx-3 md:mr-20 mt-4 bg-white p-4 rounded">
+                <p class="font-bold">Statistique des facturations</p>
+                <p>Faites glisser votre souris au dessus du graphique pour plus de détails</p>
+
+                <div class="flex  flex-col lg:flex-row gap-7">
+                    <svg class="mt-4" width="200px" height="200px" viewBox="0 0 2253.00 2253.00" version="1.1"
+                        xml:space="preserve"
+                        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;"
+                        fill="#000000" transform="rotate(0)" stroke="#000000" id="svg12" sodipodi:docname="Doughnut.svg"
+                        inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <defs id="defs16" />
+                        <sodipodi:namedview id="namedview14" pagecolor="#ffffff" bordercolor="#000000"
+                            borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0"
+                            inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showgrid="false"
+                            inkscape:zoom="0.99373237" inkscape:cx="-6.5409965" inkscape:cy="128.80732"
+                            inkscape:window-width="1600" inkscape:window-height="837" inkscape:window-x="-8"
+                            inkscape:window-y="-8" inkscape:window-maximized="1"
+                            inkscape:current-layer="SVGRepo_iconCarrier" />
+                        <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                            stroke-width="4.506" />
+                        <g id="SVGRepo_iconCarrier">
+                            <rect id="donut_chart" x="1.997" y="0" width="2250" height="2250" style="fill:none;" />
+                            <path
+                                d="M1147.83,208.333c-517.767,0 -937.5,419.733 -937.5,937.5c-0,428.307 290.274,802.155 705.228,908.271l116.136,-454.135c-207.477,-53.058 -352.614,-239.982 -352.614,-454.136c-0,-258.883 209.866,-468.75 468.75,-468.75l-0,-468.75Z"
+                                style="fill:#20406f;stroke:#202020;stroke-width:0.02253;fill-opacity:1" id="path5" />
+                            <path
+                                d="M1997.49,749.576c-153.977,-330.174 -485.321,-541.243 -849.663,-541.243l-0,468.704c182.171,0 347.843,105.535 424.832,270.622l424.831,-198.083Z"
+                                style="fill:#b63816;stroke:#202020;stroke-width:0.02253;" id="path7" />
+                            <path
+                                d="M905.188,2051.39c500.124,134.008 1014.19,-162.788 1148.2,-662.913c64.353,-240.168 30.664,-496.064 -93.656,-711.393l-405.95,234.375c62.16,107.665 79.005,235.613 46.828,355.697c-67.003,250.062 -324.036,398.46 -574.099,331.456l-121.321,452.778Z"
+                                style="fill:#2dc338;stroke:#202020;stroke-width:0.02253;" id="path9" />
+                        </g>
+                    </svg>
+                    <div class="flex justify-center flex-col gap-6">
+                        <p class="flex items-center gap-3"><span class="inline-block w-7 h-7 orange"></span> <span>En
+                                attente</span></p>
+                        <p class="flex items-center gap-3"><span class="inline-block w-7 h-7 bleu"></span> <span>En
+                                attente</span></p>
+                        <p class="flex items-center gap-3"><span class="inline-block w-7 h-7 vert"></span>
+                            <span>Finalisé</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
+    </section>
+
+    <section class="overflow-x-auto">
+        <div class="flex my-7 mx-3 gap-5 px-5 items-stretch min-w-[1100px]">
+            <div class="flex gap-2 flex-col w-1/3">
+                <div class="rounded bg-white p-2 flex justify-between items-center"><a class="flex gap-2 items-center"
+                        href=""><i class="fa-solid fa-file-import"></i>
+                        <p>Facturation</p>
+                    </a> <i class="fa-solid fa-angle-right"></i></div>
+
+                <table class="w-full border-collapse bg-white rounded-lg overflow-hidden">
+                    <thead>
+                        <tr>
+                            <th class="text-left px-6 py-4 font-semibold border-b border-cyan-600 text-cyan-600">En
+                                attente</th>
+                            <th class="text-right px-6 py-4 font-semibold border-b">En retard</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="font-semibold">F-2023 0112</p>
+                                <p class="text-cyan-600">John Doe</p>
+
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        13 mars 2023
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        13 mars 2023
+                                    </span>
+                                </div>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                11 500,00 FCFA
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="font-semibold">F-2023 0112</p>
+                                <p class="text-cyan-600">John Doe</p>
+
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        13 mars 2023
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        13 mars 2023
+                                    </span>
+                                </div>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                11 500,00 FCFA
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="font-semibold">F-2023 0112</p>
+                                <p class="text-cyan-600">John Doe</p>
+
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        13 mars 2023
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        13 mars 2023
+                                    </span>
+                                </div>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                11 500,00 FCFA
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="font-semibold">F-2023 0112</p>
+                                <p class="text-cyan-600">John Doe</p>
+
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        13 mars 2023
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        13 mars 2023
+                                    </span>
+                                </div>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                11 500,00 FCFA
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="font-semibold">F-2023 0112</p>
+                                <p class="text-cyan-600">John Doe</p>
+
+                                <div class="flex flex-wrap gap-4 text-sm">
+                                    <span>
+                                        <i class="fa-regular fa-clock"></i>
+                                        13 mars 2023
+                                    </span>
+
+                                    <span>
+                                        <i class="fa-regular fa-calendar"></i>
+                                        13 mars 2023
+                                    </span>
+                                </div>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                11 500,00 FCFA
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex gap-2 flex-col w-1/3">
+                <div class="rounded bg-white p-2 flex justify-between items-center"><a class="flex gap-2 items-center"
+                        href=""><i class="fa-regular fa-copy"></i>
+                        <p>Article</p>
+                    </a> <i class="fa-solid fa-angle-right"></i></div>
+
+                <table class="w-full border-collapse bg-white rounded-lg overflow-hidden h-full">
+                    <thead>
+                        <tr>
+                            <th class="text-left px-6 py-4 font-semibold border-b border-cyan-600 text-cyan-600">En
+                                attente</th>
+                            <th class="text-right px-6 py-4 font-semibold border-b">En retard</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold">
+                                <p>Waké</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right">
+                                <p>Vente de marchandises</p>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold">
+                                <p>Forfait main</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right">
+                                <p>Prestation artistique</p>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold">
+                                <p>Assistance Admin</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right">
+                                <p>Prestation Service</p>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold">
+                                <p>Template de site web</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right">
+                                <p>Prestation de service</p>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4 font-semibold">
+                                <p>Développement web</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right">
+                                <p>Prestation de service</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="flex gap-2 flex-col w-1/3">
+                <div class="rounded bg-white p-2 flex justify-between items-center"><a class="flex gap-2 items-center"
+                        href=""><i class="ri-folder-user-line text-xl"></i>
+                        <p>Clients</p>
+                    </a> <i class="fa-solid fa-angle-right"></i></div>
+
+                <table class="w-full border-collapse bg-white rounded-lg overflow-hidden h-full">
+                    <thead>
+                        <tr>
+                            <th class="text-left px-6 py-4 font-semibold border-b border-cyan-600 text-cyan-600">En
+                                attente</th>
+                            <th class="text-right px-6 py-4 font-semibold border-b">En retard</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="text-cyan-600 font-semibold">John Doe</p>
+                                <p><span class="font-semibold text-sm">JohnDoe@mail</span>.com</p>
+                                <p class="text-sm">BP-10000 Niamey</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                <p class="font-bold text-2xl text-gray-600">•••</p>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="text-cyan-600 font-semibold">John Doe</p>
+                                <p><span class="font-semibold text-sm">JohnDoe@mail</span>.com</p>
+                                <p class="text-sm">BP-10000 Niamey</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                <p class="font-bold text-2xl text-gray-600">•••</p>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="text-cyan-600 font-semibold">John Doe</p>
+                                <p><span class="font-semibold text-sm">JohnDoe@mail</span>.com</p>
+                                <p class="text-sm">BP-10000 Niamey</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                <p class="font-bold text-2xl text-gray-600">•••</p>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="text-cyan-600 font-semibold">John Doe</p>
+                                <p><span class="font-semibold text-sm">JohnDoe@mail</span>.com</p>
+                                <p class="text-sm">BP-10000 Niamey</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                <p class="font-bold text-2xl text-gray-600">•••</p>
+                            </td>
+                        </tr>
+
+                        <tr class="hover:bg-gray-50 transition">
+                            <td class="px-6 py-4">
+                                <p class="text-cyan-600 font-semibold">John Doe</p>
+                                <p><span class="font-semibold text-sm">JohnDoe@mail</span>.com</p>
+                                <p class="text-sm">BP-10000 Niamey</p>
+                            </td>
+
+                            <td class="px-6 py-4 text-right font-semibold">
+                                <p class="font-bold text-2xl text-gray-600">•••</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
