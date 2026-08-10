@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Article</title>
+</head>
+
+<body class="bg-blue-50">
+    <div class="bg-linear-to-b from-blue-900 to-blue-950 text-white fixed left-0 top-0 right-0 z-50">
+        <div class="flex justify-between p-3 border-b border-gray-400">
+            <div>
+                <h1 class="text-2xl font-bold"><a href="../index.html">Facturation-APP</a></h1>
+            </div>
+            <div class="flex gap-3">
+                <div class="flex items-center">
+                    <div><i class="fa-solid fa-circle-question"></i></div>
+                    <p>Aide</p>
+                </div>
+                <div class="flex justify-between gap-3 items-center">
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <i class="fa-solid fa-shop"></i>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm lg:hidden">
+            <details class="lg:hidden text-white">
+                <summary class="cursor-pointer text-3xl">
+                    ☰ <span class="text-xl">Menu</span>
+                </summary>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 p-3 gap-6">
+
+
+                    <div class=" md:border-r border-gray-400">
+                        <p class="mb-2 text-gray-400">PRODUCTIVITÉ</p>
+                        <div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-chart-line"></i>
+                                <p>Analyse</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i>
+                                <p>Taches</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-rectangle-list"></i>
+                                <p>Projets</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-clock"></i>
+                                <p>Suivi du temps</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" lg:border-r border-gray-400 md:pl-8">
+                        <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
+                        <div>
+                            <div><a class="flex gap-2 items-center" href=""><i class="fa-solid fa-file-import"></i>
+                                    <p>Facturation</p>
+                                </a></div>
+                            <div><a class="flex gap-2 items-center" href=""><i class="ri-folder-user-line text-xl"></i>
+                                    <p>Clients</p>
+                                </a></div>
+                            <div><a class="flex gap-2 items-center" href=""><i class="fa-regular fa-rectangle-list"></i>
+                                    <p>Articles</p>
+                                </a></div>
+                        </div>
+                    </div>
+
+                    <div class=" md:border-r border-gray-400 lg:pl-8">
+                        <p class="mb-2 text-gray-400">COMPTABILITÉ</p>
+                        <div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-building-columns"></i>
+                                <p>Banque</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-book"></i>
+                                <p>Livres</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-briefcase"></i>
+                                <p>Déclarations</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-file-lines"></i>
+                                <p>TVA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" md:pl-8">
+                        <p class="mb-2 text-gray-400">ALLER PLUS LOIN</p>
+                        <div>
+                            <div class="flex gap-8">
+                                <div class="flex gap-2 items-center"><i class="fa-solid fa-tags"></i>
+                                    <p>CE des Indeps</p>
+                                </div>
+                                <div class="flex gap-2 items-center"><i class="fa-solid fa-shop"></i>
+                                    <p>Store</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-user-group"></i>
+                                <p>Parrainage</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-link"></i>
+                                <p>Intégrations</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-cloud-arrow-down"></i>
+                                <p>Exports</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+        </div>
+
+        <div class="lg:grid md:grid-cols-2 lg:grid-cols-4 p-3 gap-6 hidden">
+
+
+            <div class=" md:border-r border-gray-400">
+                <p class="mb-2 text-gray-400">PRODUCTIVITÉ</p>
+                <div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-chart-line"></i>
+                        <p>Analyse</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i>
+                        <p>Taches</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-rectangle-list"></i>
+                        <p>Projets</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-clock"></i>
+                        <p>Suivi du temps</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" lg:border-r border-gray-400 md:pl-8">
+                <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
+                <div>
+                    <div><a class="flex gap-2 items-center" href=""><i class="fa-solid fa-file-import"></i>
+                            <p>Facturation</p>
+                        </a></div>
+                    <div><a class="flex gap-2 items-center" href=""><i class="ri-folder-user-line text-xl"></i>
+                            <p>Clients</p>
+                        </a></div>
+                    <div><a class="flex gap-2 items-center" href=""><i class="fa-regular fa-rectangle-list"></i>
+                            <p>Articles</p>
+                        </a></div>
+                </div>
+            </div>
+
+            <div class=" md:border-r border-gray-400 lg:pl-8">
+                <p class="mb-2 text-gray-400">COMPTABILITÉ</p>
+                <div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-building-columns"></i>
+                        <p>Banque</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-book"></i>
+                        <p>Livres</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-briefcase"></i>
+                        <p>Déclarations</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-file-lines"></i>
+                        <p>TVA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" md:pl-8">
+                <p class="mb-2 text-gray-400">ALLER PLUS LOIN</p>
+                <div>
+                    <div class="flex gap-8">
+                        <div class="flex gap-2 items-center"><i class="fa-solid fa-tags"></i>
+                            <p>CE des Indeps</p>
+                        </div>
+                        <div class="flex gap-2 items-center"><i class="fa-solid fa-shop"></i>
+                            <p>Store</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-user-group"></i>
+                        <p>Parrainage</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-link"></i>
+                        <p>Intégrations</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-cloud-arrow-down"></i>
+                        <p>Exports</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="lg:mt-60 mx-3 mt-42 md:mt-35 flex flex-col">
+        <div class="w-full">
+            <div class="flex justify-between">
+                <a href="../index.html">
+                    <p class="font-bold text-xl">Facturation</p>
+                </a>
+                <p class="text-blue-500"><i class="fa-solid fa-gear"></i> Réglages</p>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col flex-wrap">
+            <p class="text-sm">Facturer vos clients en quelques clics</p>
+            <div class="text-blue-500 text-sm flex gap-5 flex-wrap">
+                <a href="" class="flex items-center gap-1"><i class="fa-solid fa-bars-staggered"></i>
+                    <p>Comment ça marche ?</p>
+                </a>
+                <a href="" class="flex items-center gap-1"><i class="fa-regular fa-circle-question"></i>
+                    <p>FAQ Facturation</p>
+                </a>
+                <a href="" class="flex items-center gap-1"><i class="ri-download-2-line"></i>
+                    <p>Importer mes factures</p>
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center mt-3 ">
+            <div class="flex flex-col gap-5 my-5 items-center w-full justify-center">
+
+
+
+                <div class="rounded bg-white flex justify-between w-full xl:w-[65%] py-1 px-4 flex-wrap">
+                    <a href="" class="rounded-full py-1 px-5 text-blue-500 bg-blue-200">
+                        <p>Facture</p>
+                    </a>
+                    <a href="">
+                        <p>Avoir</p>
+                    </a>
+                    <a href="">
+                        <p>Devis</p>
+                    </a>
+                    <a href="">
+                        <p>Bon de commandes</p>
+                    </a>
+                    <a href="">
+                        <p>Clients</p>
+                    </a>
+                    <a href="">
+                        <p>Fournisseur</p>
+                    </a>
+                    <a href="">
+                        <p>Article</p>
+                    </a>
+                </div>
+
+                <div class="flex justify-end w-full xl:w-[65%] my-2 gap-2 flex-wrap">
+                    <button class="border border-blue-500 py-1 px-7 rounded-lg text-sm text-blue-500"><a href="">+
+                            Nouvel article</a></button>
+
+                    <button class="bg-blue-900 py-1 px-7 rounded-lg text-sm text-white"><a href=""><i
+                                class="fa-solid fa-database"></i>
+                            Automatiser</a></button>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-10 w-full xl:w-[65%]">
+                    <div class="flex flex-col justify-between w-full py-2 px-4 flex-wrap bg-white rounded">
+                        <p>Payé</p>
+                        <p><span class="font-bold text-2xl relative">100 000 fcfa </span> <span
+                                class="absolute text-sm">HT</span></p>
+                        <p><span class="relative">100 000 fcfa </span> <span class="absolute text-[7px]">HT</span></p>
+                    </div>
+
+                    <div class="flex flex-col justify-between w-full py-2 px-4 flex-wrap bg-white rounded">
+                        <p>Payé</p>
+                        <p><span class="font-bold text-2xl relative">100 000 fcfa </span> <span
+                                class="absolute text-sm">HT</span></p>
+                        <p><span class="relative">100 000 fcfa </span> <span class="absolute text-[7px]">HT</span></p>
+                    </div>
+
+                    <div class="flex flex-col justify-between w-full py-2 px-4 flex-wrap bg-white rounded">
+                        <p>Payé</p>
+                        <p><span class="font-bold text-2xl relative">100 000 fcfa </span> <span
+                                class="absolute text-sm">HT</span></p>
+                        <p><span class="relative">100 000 fcfa </span> <span class="absolute text-[7px]">HT</span></p>
+                    </div>
+                </div>
+
+                <div class="w-full mb-3 lg:w-[65%] flex gap-3 flex-wrap">
+                    <div class="lg:w-[30%] bg-white py-1 px-3 rounded-lg">
+                        <p><i class="ri-calendar-todo-fill"></i> Filtrer</p>
+                    </div>
+
+                    <input type="text" class="lg:w-[50%] bg-white py-1 px-3 rounded-lg"
+                        placeholder="🔍 Rechercher par numéro, titre, client...">
+
+
+                    <select name="" id="" class="lg:w-[30%] bg-white px-2 py-1 rounded-lg outline-none">
+                        <option value="">Filtrer par état</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+
+
+                </div>
+                <div class="w-full overflow-x-scroll xl:w-[65%] shadow rounded-lg">
+                    <table class="w-full border-collapse bg-white rounded-lg overflow-x-scroll w-full shadow-sm">
+                        <thead>
+                            <tr class="text-gray-500">
+                                <th class="text-left px-6 py-4 font-semibold">Désignation</th>
+                                <th class="text-left px-6 py-4 font-semibold">Statut</th>
+                                <th class="text-left px-6 py-4 font-semibold">Montant HT</th>
+                                <th class="text-left px-6 py-4 font-semibold">Montant TTC</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                            </td>
+
+                                <td>
+                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="100" class="px-4 py-3 text-gray-500">
+                                    <div class="flex items-center justify-end gap-6 text-sm">
+                                        <div class="flex items-center gap-2">
+                                            <span>Ligne par page</span>
+                                            <button class="flex items-center gap-1">
+                                                25
+                                                <i class="fa-solid fa-caret-down text-gray-700"></i>
+                                            </button>
+                                        </div>
+
+                                        <span>1–5 of 5</span>
+
+                                        <div class="flex items-center gap-3">
+                                            <button>
+                                                <i class="fa-solid fa-angle-left"></i>
+                                            </button>
+
+                                            <span>1</span>
+
+                                            <button>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

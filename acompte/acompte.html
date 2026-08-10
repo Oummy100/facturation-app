@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Article</title>
+</head>
+
+<body class="bg-blue-50">
+    <div
+        class="bg-white  text-blue-500 fixed left-0 top-0 right-0 z-50 flex justify-between items-center py-1 px-4 shadow">
+        <p class="font-bold">ACOMPTE</p>
+        <a href="" class="text-2xl"><i class="fa-solid fa-xmark"></i></a>
+    </div>
+
+    <section class="mx-3 mt-10">
+        <div class="text-blue-500 flex justify-between items-center py-1 px-4">
+            <div class="flex gap-1">
+                <div class="flex flex-col">
+                    <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
+                    <i class="fa-solid fa-arrow-left-long text-[10px]"></i>
+                </div>
+                <p class="text-sm">Changer de document</p>
+            </div>
+
+            <button class="bg-blue-500 text-white py-1 px-5 rounded hover:bg-blue-600"><i
+                    class="fa-solid fa-wrench"></i> Configurer</button>
+        </div>
+
+        <div class="flex">
+            <div class="w-[65%]">
+                <div class="bg-white py-1 px-2 rounded-lg shadow">
+                    <p>En relation avec</p>
+
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="font-bold">D-2023-0112</p>
+                            <p class="font-bold text-[10px]">Nom du client</p>
+                        </div>
+                        <div class="flex justify-center items-center gap-5 me-5">
+                            <p class="bg-blue-300 text-blue-900 w-fit py-1 px-3 rounded-full text-sm">Finalisé</p>
+                            <p class="font-bold text-sm relative"><span>10 000 fcfa</span> <span
+                                    class="absolute text-[7px]">HT</span> </p>
+                        </div>
+                    </div>
+
+                    <p class="text-[10px] mt-3 mb-5"><i class="fa-regular fa-clock"></i> 13 mars 2023 <i
+                            class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                </div>
+
+                <div class="bg-white py-1 px-2 rounded-lg shadow mt-4">
+                    <p class="text-gray-500">Montant de l'acompte</p>
+
+                    <div class="border border-blue-500 p-2 rounded-lg">
+                        <div class="flex justify-end items-center gap-3">
+                            <i class="fa-regular fa-clone"></i>
+                            <i class="fa-regular fa-trash-can"></i>
+                            <i class="fa-solid fa-angle-up"></i>
+                        </div>
+                        <div class="flex w-full gap-4">
+                            <div class="flex flex-col w-[50%]">
+                                <label for="">Calculer en*</label>
+                                <input type="text" name="" id="" placeholder="%" class="border rounded p-1">
+                            </div>
+
+                            <div class="flex flex-col w-[50%]">
+                                <label for="">Montant total HT*</label>
+                                <input type="text" name="" id="" placeholder="00" class="border rounded p-1">
+                            </div>
+                        </div>
+                        <div class="flex items-center mt-3 lg:gap-90 gap-3 justify-center mx-8 flex-wrap">
+                            <div>
+                                <p class="text-[11px] text-gray-500">Total à facturer</p>
+                                <p class="font-bold"><span class="relative">10 000 fcfa</span> <span class="absolute text-[7px]">HT</span></p>
+                            </div>
+
+                            <div>
+                                <p class="text-[11px] text-gray-500">Total à facturer</p>
+                                <p class="font-bold"><span class="relative">10 000 fcfa</span> <span class="absolute text-[7px]">HT</span></p>
+                            </div>
+
+                            <div>
+                                <p class="text-[11px] text-gray-500">Total à facturer</p>
+                                <p class="font-bold"><span class="relative">10 000 fcfa</span> <span class="absolute text-[7px]">HT</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
