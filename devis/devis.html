@@ -14,9 +14,8 @@
 <body class="bg-blue-100 flex justify-center">
 
     <div class="xl:w-[65%] w-[100%] bg-blue-50">
-        <div
-            class="bg-white  text-blue-500 flex justify-between items-center py-1 px-4 shadow">
-            <p class="font-bold">ACOMPTE</p>
+        <div class="bg-white  text-blue-500 flex justify-between items-center py-1 px-4 shadow">
+            <p class="font-bold">Devis</p>
             <a href="" class="text-2xl"><i class="fa-solid fa-xmark"></i></a>
         </div>
 
@@ -37,26 +36,44 @@
             <div class="flex gap-5 mt-3 flex-wrap md:flex-nowrap">
                 <div class="md:w-[65%] w-[100%]">
                     <div class="bg-white py-1 px-2 rounded-lg shadow">
-                        <p class="pb-3 text-gray-500">En relation avec</p>
+                        <p class="pb-3 text-gray-500">Client</p>
 
-                        <div class="flex justify-between">
-                            <div>
-                                <p class="font-bold">D-2023-0112</p>
-                                <p class="font-bold text-[10px]">Nom du client</p>
-                            </div>
-                            <div class="flex justify-center items-center gap-5 me-5">
-                                <p class="bg-blue-300 text-blue-900 w-fit py-1 px-3 rounded-full text-sm">Finalisé</p>
-                                <p class="font-bold text-sm relative"><span>10 000 fcfa</span> <span
-                                        class="absolute text-[7px]">HT</span> </p>
+
+
+                        <div class="mb-1">
+                            <label for="price"
+                                class="block text-sm/6 font-medium text-gray-900 text-[13px] font-bold">Selectionner ou
+                                créer un client</label>
+                            <div class="mt-2">
+                                <div
+                                    class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
+
+                                    <input id="price" type="text" name="price" placeholder="Nom du client"
+                                        class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
+                                    <div class="grid shrink-0 grid-cols-1 focus-within:relative">
+                                        <select id="currency" name="currency" aria-label="Currency"
+                                            class="col-start-1 row-start-1 w-full appearance-none rounded-md py-1.5 pr-7 pl-3 text-base text-gray-500 placeholder:text-gray-400 focus:outline-0 focus:-outline-offset-0 focus:outline-indigo-600 sm:text-sm/6">
+                                            <option></option>
+                                            <option>Omar</option>
+                                            <option>Bello</option>
+                                            <option>Amine</option>
+                                        </select>
+                                        <i
+                                            class="fa-solid fa-caret-down pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end sm:size-4"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <p class="text-[10px] mt-3 mb-5"><i class="fa-regular fa-clock"></i> 13 mars 2023 <i
-                                class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+
+                        <a href="" class="text-[12px] text-blue-500"><i class="fa-solid fa-pen-clip"></i> Modifier ce client ou ce projet</a>
+
+
+
                     </div>
 
                     <div class="bg-white py-1 px-2 rounded-lg shadow mt-4">
-                        <p class="text-gray-500">Montant de l'acompte</p>
+                        <p class="text-gray-500">Article</p>
 
                         <div class="border border-blue-500 p-2 rounded-lg">
                             <div class="flex justify-end items-center gap-3">
@@ -65,41 +82,56 @@
                                 <i class="fa-solid fa-angle-up"></i>
                             </div>
                             <div class="flex w-full gap-4 flex-wrap md:flex-nowrap mt-3">
-                                <div class="flex flex-col w-full md:w-[50%]">
-                                    <label for="">Calculer en*</label>
-                                    <input type="text" name="" id="" placeholder="%" class="border rounded p-1">
+                                <div class="flex flex-col w-full md:w-[70%]">
+                                    <label for="" class="font-bold text-[15px]">Designation *</label>
+                                    <input type="text" name="" id="" placeholder="Designation de l'article"
+                                        class="border rounded p-1 text-[13px]">
                                 </div>
 
-                                <div class="flex flex-col w-full md:w-[50%]">
-                                    <label for="">Montant total HT*</label>
-                                    <input type="text" name="" id="" placeholder="00" class="border rounded p-1">
-                                </div>
-                            </div>
-                            <div class="flex items-center mt-3 2xl:gap-50 gap-3 justify-between mx-8 flex-wrap">
-                                <div>
-                                    <p class="text-[11px] text-gray-500">Total à facturer</p>
-                                    <p class="font-bold"><span class="relative">10 000 fcfa</span> <span
-                                            class="absolute text-[7px]">HT</span></p>
-                                </div>
-
-                                <div>
-                                    <p class="text-[11px] text-gray-500">Total à facturer</p>
-                                    <p class="font-bold"><span class="relative">10 000 fcfa</span> <span
-                                            class="absolute text-[7px]">HT</span></p>
-                                </div>
-
-                                <div>
-                                    <p class="text-[11px] text-gray-500">Total à facturer</p>
-                                    <p class="font-bold"><span class="relative">10 000 fcfa</span> <span
-                                            class="absolute text-[7px]">HT</span></p>
+                                <div class="flex flex-col w-full md:w-auto">
+                                    <label for="" class="text-[15px] font-bold">Réference</label>
+                                    <input type="text" name="" id="" placeholder="Réference de l'article"
+                                        class="border rounded p-1 text-[13px]">
                                 </div>
                             </div>
 
                             <div class="flex flex-col mt-3">
-                                <label for="" class="text-[15px] font-bold">Designation</label>
+                                <label for="" class="text-[15px] font-bold">Description</label>
                                 <textarea name="" id="" cols="30" rows="4"
                                     class="border border-gray-400 text-[13px] rounded p-1"
                                     placeholder="Description de l'article"></textarea>
+                            </div>
+
+                            <div class="flex flex-col mt-3">
+                                <label for="" class="text-[15px] font-bold">Type d'article *</label>
+                                <input type="text" name="" id="" placeholder="Type d'article"
+                                    class="border rounded p-1 text-[13px]">
+                            </div>
+
+                            <div class="grid grid-cols-2 gap-1 md:grid-cols-4 mt-3">
+                                <div class="flex flex-col mt-3">
+                                    <label for="" class="text-[15px] font-bold">Unité</label>
+                                    <input type="text" name="" id="" placeholder="Type d'article"
+                                        class="border rounded p-1 text-[13px]">
+                                </div>
+
+                                <div class="flex flex-col mt-3">
+                                    <label for="" class="text-[15px] font-bold">Quantité *</label>
+                                    <input type="text" name="" id="" placeholder="Type d'article"
+                                        class="border rounded p-1 text-[13px]">
+                                </div>
+
+                                <div class="flex flex-col mt-3">
+                                    <label for="" class="text-[15px] font-bold">Prix u. HT *</label>
+                                    <input type="text" name="" id="" placeholder="Type d'article"
+                                        class="border rounded p-1 text-[13px]">
+                                </div>
+
+                                <div class="flex flex-col mt-3">
+                                    <label for="" class="text-[15px] font-bold">TVA</label>
+                                    <input type="text" name="" id="" placeholder="Type d'article"
+                                        class="border rounded p-1 text-[13px]">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -238,7 +270,7 @@
                         <div class="flex justify-between items-center border-b border-gray-500 pb-3">
                             <p class="text-[40px] text-blue-500 font-bold">Logo</p>
                             <div class="flex flex-col gap-1">
-                                <p class="font-semibold text-xl text-blue-500 text-end">Facture d'accompte</p>
+                                <p class="font-semibold text-xl text-blue-500 text-end">Devis</p>
 
                                 <div class="text-end text-[13px]">
                                     <p class="font-bold">Nom du client</p>
@@ -265,38 +297,38 @@
                                 </div>
                             </div>
                             <div class="overflow-auto">
-                            <table class="table-auto w-[800px]">
-                                <thead>
-                                    <tr class="text-blue-500 ">
-                                        <th>#</th>
-                                        <th>Désignation et Description</th>
-                                        <th>Unité</th>
-                                        <th>Quantité</th>
-                                        <th>Prix u.HT</th>
-                                        <th>TVA</th>
-                                        <th>Montant</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="text-center border-t border-blue-300">
-                                        <td>1</td>
-                                        <td>Designation</td>
-                                        <td>Unité</td>
-                                        <td>0</td>
-                                        <td>1000</td>
-                                        <td>00%</td>
-                                        <td>00000</td>
-                                    </tr>
-                                    <tr class="text-center border-b border-blue-300">
-                                        <td></td>
-                                        <td>Description de l'article</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <table class="table-auto w-[800px]">
+                                    <thead>
+                                        <tr class="text-blue-500 ">
+                                            <th>#</th>
+                                            <th>Désignation et Description</th>
+                                            <th>Unité</th>
+                                            <th>Quantité</th>
+                                            <th>Prix u.HT</th>
+                                            <th>TVA</th>
+                                            <th>Montant</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-center border-t border-blue-300">
+                                            <td>1</td>
+                                            <td>Designation</td>
+                                            <td>Unité</td>
+                                            <td>0</td>
+                                            <td>1000</td>
+                                            <td>00%</td>
+                                            <td>00000</td>
+                                        </tr>
+                                        <tr class="text-center border-b border-blue-300">
+                                            <td></td>
+                                            <td>Description de l'article</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
 
                             <div class="flex justify-between items-center mt-3">

@@ -249,8 +249,52 @@
                 </div>
 
                 <div class="flex justify-end w-full xl:w-[65%] my-2">
-                    <button class="border border-blue-500 py-1 px-7 rounded-lg text-sm text-blue-500"><a href="">+
-                            Nouvel article</a></button>
+
+                    <!-- <div>
+                        <input type="checkbox" id="menu" class="peer hidden">
+
+                        <label for="menu" class="cursor-pointer border border-blue-500 py-2 px-7 rounded-lg text-blue-500">+ Ajouter un article</label>
+                        <div class="fixed z-50 right-0 top-0 h-screen w-225 translate-x-full bg-white shadow-lg transition-transform duration-300 peer-checked:translate-x-0">
+                            <label for="menu" class="absolute right-4 top-4 cursor-pointer text-2xl">
+                                &times;
+                            </label>
+
+                            <div class="p-6">
+                                <h2 class="text-xl font-bold">Menu</h2>
+                                <p class="mt-4">Your content here.</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div>
+
+                        <input type="checkbox" id="menu" class="peer hidden">
+
+                        <label for="menu" class="cursor-pointer border border-blue-500 py-2 px-7 rounded-lg text-sm text-blue-500">
+                            +
+                            Nouvel article
+                        </label>
+
+                        <div class="fixed z-50 right-0 top-0 h-screen w-225
+               translate-x-full bg-white shadow-lg
+               transition-transform duration-300
+               peer-checked:translate-x-0">
+                                <div class="absolute flex justify-between w-full p-3">
+                            <label for="menu" class="cursor-pointer text-2xl flex items-center gap-2">
+                                <i class="fa-solid fa-xmark text-blue-500"></i>  <h2 class="text-xl font-bold">Créer un article</h2>
+                            </label>
+
+                            <button class="py-2 px-7 text-sm text-white bg-blue-500">Créer</button>
+                            </div>
+
+                            <div class="p-6">
+                               
+                               
+                            </div>
+
+                        </div>
+
+                    </div> 
                 </div>
 
                 <div class="w-full mb-3 lg:w-[65%]">
@@ -259,219 +303,219 @@
                 </div>
                 <div class="w-full overflow-x-scroll xl:w-[65%] shadow rounded-lg">
                     <table class="w-full border-collapse bg-white rounded-lg overflow-x-scroll w-full shadow-sm">
-                    <thead>
-                        <tr class="text-gray-500">
-                            <th class="text-left px-6 py-4 font-semibold">Désignation</th>
-                            <th class="text-right px-6 py-4 font-semibold">Type d'article</th>
-                            <th class="text-right px-6 py-4 font-semibold">Unité</th>
-                            <th class="text-right px-6 py-4 font-semibold">Prix unitaire</th>
-                            <th class="text-right px-6 py-4 font-semibold">TVA</th>
-                        </tr>
-                    </thead>
+                        <thead>
+                            <tr class="text-gray-500">
+                                <th class="text-left px-6 py-4 font-semibold">Désignation</th>
+                                <th class="text-right px-6 py-4 font-semibold">Type d'article</th>
+                                <th class="text-right px-6 py-4 font-semibold">Unité</th>
+                                <th class="text-right px-6 py-4 font-semibold">Prix unitaire</th>
+                                <th class="text-right px-6 py-4 font-semibold">TVA</th>
+                            </tr>
+                        </thead>
 
-                    <tbody>
-                        <tr class="hover:bg-gray-50 transition">
-                            <td class="px-6 py-4 font-semibold">
-                                <p>Forfait carte de visite</p>
-                            </td>
+                        <tbody>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>Forfait carte de visite</p>
+                                </td>
 
-                            <td class="px-6 py-4 ">
-                                Prestation de service
-                            </td>
+                                <td class="px-6 py-4 ">
+                                    Prestation de service
+                                </td>
 
-                            <td class="px-6 py-4 font-semibold">
-                                <p>heure</p>
-                            </td>
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>heure</p>
+                                </td>
 
-                            <td class="px-6 py-4 font-semibold">
-                                <p>11 500,00 fcfa</p>
-                            </td>
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>11 500,00 fcfa</p>
+                                </td>
 
-                            <td></td>
+                                <td></td>
 
-                            <td class="px-6 py-4 ">
-                                <div class="flex gap-5 items-center justify-center">
-                                    <i class="fa-solid fa-pen-clip"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr class="hover:bg-gray-50 transition">
-                            <td class="px-6 py-4 font-semibold">
-                                <p>Waké</p>
-                            </td>
-
-                            <td class="px-6 py-4 ">
-                                vente de marchandises
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>unité</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>11 500,00 fcfa</p>
-                            </td>
-
-                            <td></td>
-
-                            <td>
-                                <div class="flex gap-5 items-center justify-center">
-                                    <i class="fa-solid fa-pen-clip"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr class="hover:bg-gray-50 transition">
-                            <td class="px-6 py-4 font-semibold">
-                                <p>Forfait main</p>
-                            </td>
-
-                            <td class="px-6 py-4 ">
-                                Prestation artistique
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>heure</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>11 500,00 fcfa</p>
-                            </td>
-
-                            <td></td>
-
-                            <td>
-                                <div class="flex gap-5 items-center justify-center">
-                                    <i class="fa-solid fa-pen-clip"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr class="hover:bg-gray-50 transition">
-                            <td class="px-6 py-4 font-semibold">
-                                <p>Assistance Admin</p>
-                            </td>
-
-                            <td class="px-6 py-4 ">
-                                Prestation de service
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>unité</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>11 500,00 fcfa</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>20%</p>
-                            </td>
-
-                            <td>
-                                <div class="flex gap-5 items-center justify-center">
-                                    <i class="fa-solid fa-pen-clip"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr class="hover:bg-gray-50 transition">
-                            <td class="px-6 py-4 font-semibold">
-                                <p>Template de site web</p>
-                            </td>
-
-                            <td class="px-6 py-4 ">
-                                <p>Prestation de service</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>unité</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>11 500,00 fcfa</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>15%</p>
-                            </td>
-
-                            <td>
-                                <div class="flex gap-5 items-center justify-center">
-                                    <i class="fa-solid fa-pen-clip"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
-
-                        <tr class="hover:bg-gray-50 transition">
-                            <td class="px-6 py-4 font-semibold">
-                                <p>Développement web</p>
-                            </td>
-
-                            <td class="px-6 py-4 ">
-                                <p>Prestation de service</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>unité</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>11 500,00 fcfa</p>
-                            </td>
-
-                            <td class="px-6 py-4 font-semibold">
-                                <p>20%</p>
-                            </td>
-
-                            <td>
-                                <div class="flex gap-5 items-center justify-center">
-                                    <i class="fa-solid fa-pen-clip"></i>
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-
-                    <tfoot>
-                        <tr>
-                            <td colspan="100" class="px-4 py-3 text-gray-500">
-                                <div class="flex items-center justify-end gap-6 text-sm">
-                                    <div class="flex items-center gap-2">
-                                        <span>Ligne par page</span>
-                                        <button class="flex items-center gap-1">
-                                            25
-                                            <i class="fa-solid fa-caret-down text-gray-700"></i>
-                                        </button>
+                                <td class="px-6 py-4 ">
+                                    <div class="flex gap-5 items-center justify-center">
+                                        <i class="fa-solid fa-pen-clip"></i>
+                                        <i class="fa-solid fa-trash-can"></i>
                                     </div>
+                                </td>
+                            </tr>
 
-                                    <span>1–5 of 5</span>
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>Waké</p>
+                                </td>
 
-                                    <div class="flex items-center gap-3">
-                                        <button>
-                                            <i class="fa-solid fa-angle-left"></i>
-                                        </button>
+                                <td class="px-6 py-4 ">
+                                    vente de marchandises
+                                </td>
 
-                                        <span>1</span>
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>unité</p>
+                                </td>
 
-                                        <button>
-                                            <i class="fa-solid fa-angle-right"></i>
-                                        </button>
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td>
+                                    <div class="flex gap-5 items-center justify-center">
+                                        <i class="fa-solid fa-pen-clip"></i>
+                                        <i class="fa-solid fa-trash-can"></i>
                                     </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>Forfait main</p>
+                                </td>
+
+                                <td class="px-6 py-4 ">
+                                    Prestation artistique
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>heure</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td>
+                                    <div class="flex gap-5 items-center justify-center">
+                                        <i class="fa-solid fa-pen-clip"></i>
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>Assistance Admin</p>
+                                </td>
+
+                                <td class="px-6 py-4 ">
+                                    Prestation de service
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>unité</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>11 500,00 fcfa</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>20%</p>
+                                </td>
+
+                                <td>
+                                    <div class="flex gap-5 items-center justify-center">
+                                        <i class="fa-solid fa-pen-clip"></i>
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>Template de site web</p>
+                                </td>
+
+                                <td class="px-6 py-4 ">
+                                    <p>Prestation de service</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>unité</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>11 500,00 fcfa</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>15%</p>
+                                </td>
+
+                                <td>
+                                    <div class="flex gap-5 items-center justify-center">
+                                        <i class="fa-solid fa-pen-clip"></i>
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>Développement web</p>
+                                </td>
+
+                                <td class="px-6 py-4 ">
+                                    <p>Prestation de service</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>unité</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>11 500,00 fcfa</p>
+                                </td>
+
+                                <td class="px-6 py-4 font-semibold">
+                                    <p>20%</p>
+                                </td>
+
+                                <td>
+                                    <div class="flex gap-5 items-center justify-center">
+                                        <i class="fa-solid fa-pen-clip"></i>
+                                        <i class="fa-solid fa-trash-can"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="100" class="px-4 py-3 text-gray-500">
+                                    <div class="flex items-center justify-end gap-6 text-sm">
+                                        <div class="flex items-center gap-2">
+                                            <span>Ligne par page</span>
+                                            <button class="flex items-center gap-1">
+                                                25
+                                                <i class="fa-solid fa-caret-down text-gray-700"></i>
+                                            </button>
+                                        </div>
+
+                                        <span>1–5 of 5</span>
+
+                                        <div class="flex items-center gap-3">
+                                            <button>
+                                                <i class="fa-solid fa-angle-left"></i>
+                                            </button>
+
+                                            <span>1</span>
+
+                                            <button>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
                 </div>
 
-                
+
             </div>
         </div>
     </section>

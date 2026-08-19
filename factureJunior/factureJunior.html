@@ -14,9 +14,8 @@
 <body class="bg-blue-100 flex justify-center">
 
     <div class="xl:w-[65%] w-[100%] bg-blue-50">
-        <div
-            class="bg-white  text-blue-500 flex justify-between items-center py-1 px-4 shadow">
-            <p class="font-bold">ACOMPTE</p>
+        <div class="bg-white  text-blue-500 flex justify-between items-center py-1 px-4 shadow">
+            <p class="font-bold">Facture</p>
             <a href="" class="text-2xl"><i class="fa-solid fa-xmark"></i></a>
         </div>
 
@@ -36,24 +35,56 @@
 
             <div class="flex gap-5 mt-3 flex-wrap md:flex-nowrap">
                 <div class="md:w-[65%] w-[100%]">
-                    <div class="bg-white py-1 px-2 rounded-lg shadow">
-                        <p class="pb-3 text-gray-500">En relation avec</p>
 
-                        <div class="flex justify-between">
+                    <div class="bg-white py-1 px-2 rounded-lg shadow">
+                        <div>
                             <div>
-                                <p class="font-bold">D-2023-0112</p>
-                                <p class="font-bold text-[10px]">Nom du client</p>
+                                <p class="pb-3 text-gray-500">En relation avec</p>
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="font-bold">D-2023-0112</p>
+                                        <p class="font-bold text-[10px]">Nom du client</p>
+                                    </div>
+                                    <div class="flex justify-center items-center gap-5 me-5">
+                                        <p class="bg-blue-300 text-blue-900 w-fit py-1 px-3 rounded-full text-sm">
+                                            Finalisé
+                                        </p>
+                                        <p class="font-bold text-sm relative"><span>10 000 fcfa</span> <span
+                                                class="absolute text-[7px]">HT</span> </p>
+                                    </div>
+                                </div>
+
+                                <p class="text-[10px] mt-3 mb-5"><i class="fa-regular fa-clock"></i> 13 mars 2023 <i
+                                        class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
                             </div>
-                            <div class="flex justify-center items-center gap-5 me-5">
-                                <p class="bg-blue-300 text-blue-900 w-fit py-1 px-3 rounded-full text-sm">Finalisé</p>
-                                <p class="font-bold text-sm relative"><span>10 000 fcfa</span> <span
-                                        class="absolute text-[7px]">HT</span> </p>
+                            <div>
+
+                                <div class="flex justify-between">
+                                    <div>
+                                        <p class="font-bold">A-2023-0112</p>
+                                        <p class="font-bold text-[10px]">Nom du client</p>
+                                    </div>
+                                    <div class="flex justify-center items-center gap-5 me-5">
+                                        <p class="bg-blue-300 text-blue-900 w-fit py-1 px-3 rounded-full text-sm">
+                                            Finalisé
+                                        </p>
+                                        <p class="font-bold text-sm relative"><span>10 000 fcfa</span> <span
+                                                class="absolute text-[7px]">HT</span> </p>
+                                    </div>
+                                </div>
+
+                                <p class="text-[10px] mt-3 mb-5"><i class="fa-regular fa-clock"></i> 13 mars 2023 <i
+                                        class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
                             </div>
                         </div>
 
-                        <p class="text-[10px] mt-3 mb-5"><i class="fa-regular fa-clock"></i> 13 mars 2023 <i
-                                class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+
+
                     </div>
+
+
+
 
                     <div class="bg-white py-1 px-2 rounded-lg shadow mt-4">
                         <p class="text-gray-500">Montant de l'acompte</p>
@@ -249,7 +280,7 @@
                         </div>
 
                         <div>
-                            <div class="flex justify-between items-center py-2">
+                            <div class="flex justify-between items-center py-2 flex-wrap gap-5">
                                 <div class="text-[13px]">
                                     <p class="font-bold">Nom du prestataire</p>
                                     <p>Boite postale et ville du prestataire</p>
@@ -265,65 +296,89 @@
                                 </div>
                             </div>
                             <div class="overflow-auto">
-                            <table class="table-auto w-[800px]">
-                                <thead>
-                                    <tr class="text-blue-500 ">
-                                        <th>#</th>
-                                        <th>Désignation et Description</th>
-                                        <th>Unité</th>
-                                        <th>Quantité</th>
-                                        <th>Prix u.HT</th>
-                                        <th>TVA</th>
-                                        <th>Montant</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="text-center border-t border-blue-300">
-                                        <td>1</td>
-                                        <td>Designation</td>
-                                        <td>Unité</td>
-                                        <td>0</td>
-                                        <td>1000</td>
-                                        <td>00%</td>
-                                        <td>00000</td>
-                                    </tr>
-                                    <tr class="text-center border-b border-blue-300">
-                                        <td></td>
-                                        <td>Description de l'article</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <table class="table-auto w-[800px]">
+                                    <thead>
+                                        <tr class="text-blue-500 ">
+                                            <th>#</th>
+                                            <th>Désignation et Description</th>
+                                            <th>Unité</th>
+                                            <th>Quantité</th>
+                                            <th>Prix u.HT</th>
+                                            <th>TVA</th>
+                                            <th>Montant</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-center border-t border-blue-300">
+                                            <td>1</td>
+                                            <td>Designation</td>
+                                            <td>Unité</td>
+                                            <td>0</td>
+                                            <td>1000</td>
+                                            <td>00%</td>
+                                            <td>00000</td>
+                                        </tr>
+                                        <tr class="text-center border-b border-blue-300">
+                                            <td></td>
+                                            <td>Description de l'article</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
 
-                            <div class="flex justify-between items-center mt-3">
+                            <div class="flex justify-between items-center my-5">
                                 <div>
                                     <div>
-                                        <p class="font-bold">Delai de paiement</p>
-                                        <p>30 jours</p>
+                                        <p class="font-bold text-[13px]">Delai de paiement</p>
+                                        <p class="text-[13px]">30 jours</p>
                                     </div>
                                     <div>
-                                        <p class="font-bold">Moyen de paiement</p>
-                                        <p>Virement bancaire</p>
+                                        <p class="font-bold text-[13px]">Moyen de paiement</p>
+                                        <p class="text-[13px]">Virement bancaire</p>
                                     </div>
                                 </div>
 
-                                <div>
-                                    <p>Total HT</p>
-                                    <p>TVA</p>
-                                    <p>Total TTC</p>
-                                </div>
+                                <table class="w-[50%] text-[13px]">
+                                    <tbody>
+                                        <tr>
+                                            <td class="font-bold">Total HT</td>
+                                            <td class="text-right">10000</td>
+                                        </tr>
 
-                                <div>
-                                    <p>10000</p>
-                                    <p>2000</p>
-                                    <p>12000</p>
-                                </div>
+                                        <tr>
+                                            <td class="font-bold">TVA</td>
+                                            <td class="text-right">2000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font-bold">Total TTC</td>
+                                            <td class="text-right">12000</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="font-bold">Something i didn't see</td>
+                                            <td class="text-right">3000</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tfoot>
+                                        <tr class="bg-blue-500 text-white">
+                                            <td class="font-bold pl-1">Montant à payer</td>
+                                            <td class="text-right font-bold pr-1">15000</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+
                             </div>
                         </div>
+                    </div>
+                    <div class="flex justify-end mt-7">
+                        <button class="bg-blue-500 text-white py-1 px-5 rounded hover:bg-blue-600 text-[13px]">First
+                            second third</button>
                     </div>
                 </div>
             </div>
