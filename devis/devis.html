@@ -11,358 +11,692 @@
     <title>Article</title>
 </head>
 
-<body class="bg-blue-100 flex justify-center">
-
-    <div class="xl:w-[65%] w-[100%] bg-blue-50">
-        <div class="bg-white  text-blue-500 flex justify-between items-center py-1 px-4 shadow">
-            <p class="font-bold">Devis</p>
-            <a href="" class="text-2xl"><i class="fa-solid fa-xmark"></i></a>
+<body class="bg-blue-50">
+    <div class="bg-linear-to-b from-blue-900 to-blue-950 text-white fixed left-0 top-0 right-0 z-50">
+        <div class="flex justify-between p-3 border-b border-gray-400">
+            <div>
+                <h1 class="text-2xl font-bold"><a href="../index.html">Facturation-APP</a></h1>
+            </div>
+            <div class="flex gap-3">
+                <div class="flex items-center">
+                    <div><i class="fa-solid fa-circle-question"></i></div>
+                    <p>Aide</p>
+                </div>
+                <div class="flex justify-between gap-3 items-center">
+                    <i class="fa-solid fa-calendar-day"></i>
+                    <i class="fa-solid fa-shop"></i>
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+            </div>
         </div>
 
-        <section class="mx-3 mt-5">
-            <div class="text-blue-500 flex justify-between items-center py-1 px-4">
-                <div class="flex gap-1">
-                    <div class="flex flex-col">
-                        <i class="fa-solid fa-arrow-right-long text-[10px]"></i>
-                        <i class="fa-solid fa-arrow-left-long text-[10px]"></i>
-                    </div>
-                    <p class="text-sm">Changer de document</p>
-                </div>
-
-                <button class="bg-blue-500 text-white py-1 px-5 rounded hover:bg-blue-600"><i
-                        class="fa-solid fa-wrench"></i> Configurer</button>
-            </div>
-
-            <div class="flex gap-5 mt-3 flex-wrap md:flex-nowrap">
-                <div class="md:w-[65%] w-[100%]">
-                    <div class="bg-white py-1 px-2 rounded-lg shadow">
-                        <p class="pb-3 text-gray-500">Client</p>
+        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm lg:hidden">
+            <details class="lg:hidden text-white">
+                <summary class="cursor-pointer text-3xl">
+                    ☰ <span class="text-xl">Menu</span>
+                </summary>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 p-3 gap-6">
 
 
-
-                        <div class="mb-1">
-                            <label for="price"
-                                class="block text-sm/6 font-medium text-gray-900 text-[13px] font-bold">Selectionner ou
-                                créer un client</label>
-                            <div class="mt-2">
-                                <div
-                                    class="flex items-center rounded-md bg-white pl-3 outline-1 -outline-offset-1 outline-gray-300 has-[input:focus-within]:outline-2 has-[input:focus-within]:-outline-offset-2 has-[input:focus-within]:outline-indigo-600">
-
-                                    <input id="price" type="text" name="price" placeholder="Nom du client"
-                                        class="block min-w-0 grow py-1.5 pr-3 pl-1 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6" />
-                                    <div class="grid shrink-0 grid-cols-1 focus-within:relative">
-                                        <select id="currency" name="currency" aria-label="Currency"
-                                            class="col-start-1 row-start-1 w-full appearance-none rounded-md py-1.5 pr-7 pl-3 text-base text-gray-500 placeholder:text-gray-400 focus:outline-0 focus:-outline-offset-0 focus:outline-indigo-600 sm:text-sm/6">
-                                            <option></option>
-                                            <option>Omar</option>
-                                            <option>Bello</option>
-                                            <option>Amine</option>
-                                        </select>
-                                        <i
-                                            class="fa-solid fa-caret-down pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end sm:size-4"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <a href="" class="text-[12px] text-blue-500"><i class="fa-solid fa-pen-clip"></i> Modifier ce client ou ce projet</a>
-
-
-
-                    </div>
-
-                    <div class="bg-white py-1 px-2 rounded-lg shadow mt-4">
-                        <p class="text-gray-500">Article</p>
-
-                        <div class="border border-blue-500 p-2 rounded-lg">
-                            <div class="flex justify-end items-center gap-3">
-                                <i class="fa-regular fa-clone"></i>
-                                <i class="fa-regular fa-trash-can"></i>
-                                <i class="fa-solid fa-angle-up"></i>
-                            </div>
-                            <div class="flex w-full gap-4 flex-wrap md:flex-nowrap mt-3">
-                                <div class="flex flex-col w-full md:w-[70%]">
-                                    <label for="" class="font-bold text-[15px]">Designation *</label>
-                                    <input type="text" name="" id="" placeholder="Designation de l'article"
-                                        class="border rounded p-1 text-[13px]">
-                                </div>
-
-                                <div class="flex flex-col w-full md:w-auto">
-                                    <label for="" class="text-[15px] font-bold">Réference</label>
-                                    <input type="text" name="" id="" placeholder="Réference de l'article"
-                                        class="border rounded p-1 text-[13px]">
-                                </div>
-                            </div>
-
-                            <div class="flex flex-col mt-3">
-                                <label for="" class="text-[15px] font-bold">Description</label>
-                                <textarea name="" id="" cols="30" rows="4"
-                                    class="border border-gray-400 text-[13px] rounded p-1"
-                                    placeholder="Description de l'article"></textarea>
-                            </div>
-
-                            <div class="flex flex-col mt-3">
-                                <label for="" class="text-[15px] font-bold">Type d'article *</label>
-                                <input type="text" name="" id="" placeholder="Type d'article"
-                                    class="border rounded p-1 text-[13px]">
-                            </div>
-
-                            <div class="grid grid-cols-2 gap-1 md:grid-cols-4 mt-3">
-                                <div class="flex flex-col mt-3">
-                                    <label for="" class="text-[15px] font-bold">Unité</label>
-                                    <input type="text" name="" id="" placeholder="Type d'article"
-                                        class="border rounded p-1 text-[13px]">
-                                </div>
-
-                                <div class="flex flex-col mt-3">
-                                    <label for="" class="text-[15px] font-bold">Quantité *</label>
-                                    <input type="text" name="" id="" placeholder="Type d'article"
-                                        class="border rounded p-1 text-[13px]">
-                                </div>
-
-                                <div class="flex flex-col mt-3">
-                                    <label for="" class="text-[15px] font-bold">Prix u. HT *</label>
-                                    <input type="text" name="" id="" placeholder="Type d'article"
-                                        class="border rounded p-1 text-[13px]">
-                                </div>
-
-                                <div class="flex flex-col mt-3">
-                                    <label for="" class="text-[15px] font-bold">TVA</label>
-                                    <input type="text" name="" id="" placeholder="Type d'article"
-                                        class="border rounded p-1 text-[13px]">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-white py-1 px-2 rounded-lg shadow mt-4">
-                        <div class="p-1 text-[13px]">
-                            <p class="text-blue-500">+ Ajouter un article</p>
-                        </div>
-                    </div>
-
-                    <div class="bg-white py-1 px-2 rounded-lg shadow mt-4 text-gray-500">
-                        <p>Date d'émission</p>
-
-                        <div class="flex flex-col mt-3">
-                            <label for="date" class="text-black">Veuillez entrer la date d'émisssion</label>
-                            <input type="text" name="" id="date"
-                                class="border border-gray-400 rounded p-1 font-bold text-black"
-                                placeholder="00/00/0000">
-                        </div>
-
-                        <p class="my-3 text-gray-500 text-[13px]">Date d'émission le 00/00/0000</p>
-                    </div>
-
-                    <div class="bg-white py-1 px-2 rounded-lg shadow mt-4 text-gray-500">
-                        <p>Validité</p>
-
-                        <div class="flex flex-col mt-3">
-                            <label for="date" class="text-black">Veuillez entrer la date de validité</label>
-                            <input type="text" name="" id="date"
-                                class="border border-gray-400 rounded p-1 font-bold text-black"
-                                placeholder="00/00/0000">
-                        </div>
-
-                        <p class="my-3 text-gray-500 text-[13px]">Validé jusqu'au 00/00/0000</p>
-                    </div>
-
-                    <div class="bg-white py-1 px-2 rounded-lg shadow mt-4 text-gray-500">
-                        <p>Langue</p>
-
-                        <div class="flex justify-between flex-wrap mt-3">
-                            <p class="text-[13px] font-bold text-black">Selectionner une langue pour le document</p>
-
-                            <el-dropdown class="inline-block">
-                                <button
-                                    class="inline-flex w-full justify-center border gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-bold text-black  inset-ring-1 inset-ring-white/5 hover:bg-white/20">
-                                    Français
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </button>
-
-                                <el-menu anchor="bottom end" popover
-                                    class="w-56 origin-top-right rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
-                                    <div class="py-1">
-                                        <a href="#"
-                                            class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Account
-                                            settings</a>
-                                        <a href="#"
-                                            class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Support</a>
-                                        <a href="#"
-                                            class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">License</a>
-                                        <form action="#" method="POST">
-                                            <button type="submit"
-                                                class="block w-full px-4 py-2 text-left text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Sign
-                                                out</button>
-                                        </form>
-                                    </div>
-                                </el-menu>
-                            </el-dropdown>
-                        </div>
-
-                        <p class="mb-3 text-gray-500 text-[13px]">Langue actuelle Français</p>
-                    </div>
-
-                    <div class="bg-white py-1 px-2 rounded-lg shadow mt-4 text-gray-500">
-                        <p>Devise</p>
-
-                        <div class="flex justify-between flex-wrap mt-3">
-                            <p class="text-[13px] font-bold text-black">Modifier le devis du document</p>
-
-                            <el-dropdown class="inline-block">
-                                <button
-                                    class="inline-flex w-full justify-center border gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-bold text-black  inset-ring-1 inset-ring-white/5 hover:bg-white/20">
-                                    Français
-                                    <i class="fa-solid fa-caret-down"></i>
-                                </button>
-
-                                <el-menu anchor="bottom end" popover
-                                    class="w-56 origin-top-right rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
-                                    <div class="py-1">
-                                        <a href="#"
-                                            class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Account
-                                            settings</a>
-                                        <a href="#"
-                                            class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Support</a>
-                                        <a href="#"
-                                            class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">License</a>
-                                        <form action="#" method="POST">
-                                            <button type="submit"
-                                                class="block w-full px-4 py-2 text-left text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Sign
-                                                out</button>
-                                        </form>
-                                    </div>
-                                </el-menu>
-                            </el-dropdown>
-                        </div>
-
-                        <p class="mb-3 text-gray-500 text-[13px]">Devis actuel: Francs CFA</p>
-                    </div>
-
-                    <div class="bg-white py-1 px-2 rounded-lg shadow mt-4 text-gray-500 mb-20">
-
-                        <div class="flex justify-between flex-wrap mt-3">
-                            <div class="">
-                                <p>Langue</p>
-                                <p class="text-[13px] font-bold text-black">Selectionner une langue pour le document</p>
-                            </div>
-
-                            <button class="bg-blue-500 text-[15px] text-white px-2 rounded hover:bg-blue-600">+ Ajouter
-                                un
-                                document</button>
-                        </div>
-                        <div class="flex justify-center items-center flex-col mt-3 border py-3 border-dashed mt-5">
-                            <label for="open" class="flex flex-col justify-center items-center gap-3 cursor-pointer">
-                                <i class="fa-regular fa-file text-[25px] text-black"></i>
-                                <p class="text-black text-[15px] font-bold">+ Ajouter un document</p>
-                            </label>
-
-                            <input type="file" value="" name="" id="open" class="hidden mt-3">
-                        </div>
-
-                        <p class="text-gray-500 text-center mt-5">Aucun document n'a été ajouté pour le moment</p>
-                    </div>
-                </div>
-
-                <div class="md:w-[35%] w-[100%]">
-                    <div class="bg-white py-1 px-2 rounded-lg shadow">
-                        <div class="flex justify-between items-center border-b border-gray-500 pb-3">
-                            <p class="text-[40px] text-blue-500 font-bold">Logo</p>
-                            <div class="flex flex-col gap-1">
-                                <p class="font-semibold text-xl text-blue-500 text-end">Devis</p>
-
-                                <div class="text-end text-[13px]">
-                                    <p class="font-bold">Nom du client</p>
-                                    <p>Bote postale et ville du client</p>
-                                    <p>Location du client</p>
-                                </div>
-                            </div>
-                        </div>
-
+                    <div class=" md:border-r border-gray-400">
+                        <p class="mb-2 text-gray-400">PRODUCTIVITÉ</p>
                         <div>
-                            <div class="flex justify-between items-center py-2">
-                                <div class="text-[13px]">
-                                    <p class="font-bold">Nom du prestataire</p>
-                                    <p>Boite postale et ville du prestataire</p>
-                                    <p>Localisation du prestataire</p>
-                                    <p>Numéro de tel prestataire</p>
-                                    <p>Email du prestataire</p>
-                                </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-chart-line"></i>
+                                <a href="../index.html"><p>Analyse</p></a>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i>
+                                <p>Taches</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-rectangle-list"></i>
+                                <p>Projets</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-clock"></i>
+                                <p>Suivi du temps</p>
+                            </div>
+                        </div>
+                    </div>
 
-                                <div class="text-[13px]">
-                                    <p>N° du document 000000</p>
-                                    <p>Date d'émission 00-00-2025</p>
-                                    <p>Date de validité 00-00-2025</p>
+                    <div class=" lg:border-r border-gray-400 md:pl-8">
+                        <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
+                        <div>
+                            <div><a class="flex gap-2 items-center" href="../facture/facture.html class="fa-solid fa-file-import"></i>
+                                    <p>Facturation</p>
+                                </a></div>
+                            <div><a class="flex gap-2 items-center" href="../clients/clients.html"><i class="ri-folder-user-line text-xl"></i>
+                                    <p>Clients</p>
+                                </a></div>
+                            <div><a class="flex gap-2 items-center" href="../article/article.html"><i class="fa-regular fa-rectangle-list"></i>
+                                    <p>Articles</p>
+                                </a></div>
+                        </div>
+                    </div>
+
+                    <div class=" md:border-r border-gray-400 lg:pl-8">
+                        <p class="mb-2 text-gray-400">COMPTABILITÉ</p>
+                        <div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-building-columns"></i>
+                                <p>Banque</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-book"></i>
+                                <p>Livres</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-briefcase"></i>
+                                <p>Déclarations</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-regular fa-file-lines"></i>
+                                <p>TVA</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" md:pl-8">
+                        <p class="mb-2 text-gray-400">ALLER PLUS LOIN</p>
+                        <div>
+                            <div class="flex gap-8">
+                                <div class="flex gap-2 items-center"><i class="fa-solid fa-tags"></i>
+                                    <p>CE des Indeps</p>
+                                </div>
+                                <div class="flex gap-2 items-center"><i class="fa-solid fa-shop"></i>
+                                    <p>Store</p>
                                 </div>
                             </div>
-                            <div class="overflow-auto">
-                                <table class="table-auto w-[800px]">
-                                    <thead>
-                                        <tr class="text-blue-500 ">
-                                            <th>#</th>
-                                            <th>Désignation et Description</th>
-                                            <th>Unité</th>
-                                            <th>Quantité</th>
-                                            <th>Prix u.HT</th>
-                                            <th>TVA</th>
-                                            <th>Montant</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="text-center border-t border-blue-300">
-                                            <td>1</td>
-                                            <td>Designation</td>
-                                            <td>Unité</td>
-                                            <td>0</td>
-                                            <td>1000</td>
-                                            <td>00%</td>
-                                            <td>00000</td>
-                                        </tr>
-                                        <tr class="text-center border-b border-blue-300">
-                                            <td></td>
-                                            <td>Description de l'article</td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-user-group"></i>
+                                <p>Parrainage</p>
                             </div>
-
-                            <div class="flex justify-between items-center mt-3">
-                                <div>
-                                    <div>
-                                        <p class="font-bold">Delai de paiement</p>
-                                        <p>30 jours</p>
-                                    </div>
-                                    <div>
-                                        <p class="font-bold">Moyen de paiement</p>
-                                        <p>Virement bancaire</p>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <p>Total HT</p>
-                                    <p>TVA</p>
-                                    <p>Total TTC</p>
-                                </div>
-
-                                <div>
-                                    <p>10000</p>
-                                    <p>2000</p>
-                                    <p>12000</p>
-                                </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-link"></i>
+                                <p>Intégrations</p>
+                            </div>
+                            <div class="flex gap-2 items-center"><i class="fa-solid fa-cloud-arrow-down"></i>
+                                <p>Exports</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </div>
-</body>
+            </details>
 
-<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+        </div>
+
+        <div class="lg:grid md:grid-cols-2 lg:grid-cols-4 p-3 gap-6 hidden">
+
+
+            <div class=" md:border-r border-gray-400">
+                <p class="mb-2 text-gray-400">PRODUCTIVITÉ</p>
+                <div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-chart-line"></i>
+                        <a href="../index.html"><p>Analyse</p></a>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-circle-check"></i>
+                        <p>Taches</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-rectangle-list"></i>
+                        <p>Projets</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-clock"></i>
+                        <p>Suivi du temps</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" lg:border-r border-gray-400 md:pl-8">
+                <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
+                <div>
+                    <div><a class="flex gap-2 items-center" href="../facture/facture.html"><i class="fa-solid fa-file-import"></i>
+                            <p>Facturation</p>
+                        </a></div>
+                    <div><a class="flex gap-2 items-center" href="../clients/clients.html"><i class="ri-folder-user-line text-xl"></i>
+                            <p>Clients</p>
+                        </a></div>
+                    <div><a class="flex gap-2 items-center" href="../article/article.html"><i class="fa-regular fa-rectangle-list"></i>
+                            <p>Articles</p>
+                        </a></div>
+                </div>
+            </div>
+
+            <div class=" md:border-r border-gray-400 lg:pl-8">
+                <p class="mb-2 text-gray-400">COMPTABILITÉ</p>
+                <div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-building-columns"></i>
+                        <p>Banque</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-book"></i>
+                        <p>Livres</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-briefcase"></i>
+                        <p>Déclarations</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-regular fa-file-lines"></i>
+                        <p>TVA</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" md:pl-8">
+                <p class="mb-2 text-gray-400">ALLER PLUS LOIN</p>
+                <div>
+                    <div class="flex gap-8">
+                        <div class="flex gap-2 items-center"><i class="fa-solid fa-tags"></i>
+                            <p>CE des Indeps</p>
+                        </div>
+                        <div class="flex gap-2 items-center"><i class="fa-solid fa-shop"></i>
+                            <p>Store</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-user-group"></i>
+                        <p>Parrainage</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-link"></i>
+                        <p>Intégrations</p>
+                    </div>
+                    <div class="flex gap-2 items-center"><i class="fa-solid fa-cloud-arrow-down"></i>
+                        <p>Exports</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="lg:mt-60 mx-3 mt-42 md:mt-35 flex flex-col">
+        <div class="w-full">
+            <div class="flex justify-between">
+                <a href="../index.html">
+                    <p class="font-bold text-xl">Facturation</p>
+                </a>
+                <p class="text-blue-500"><i class="fa-solid fa-gear"></i> Réglages</p>
+            </div>
+        </div>
+
+        <div class="w-full flex flex-col flex-wrap">
+            <p class="text-sm">Facturer vos clients en quelques clics</p>
+            <div class="text-blue-500 text-sm flex gap-5 flex-wrap">
+                <a href="" class="flex items-center gap-1"><i class="fa-solid fa-bars-staggered"></i>
+                    <p>Comment ça marche ?</p>
+                </a>
+                <a href="" class="flex items-center gap-1"><i class="fa-regular fa-circle-question"></i>
+                    <p>FAQ Facturation</p>
+                </a>
+                <a href="" class="flex items-center gap-1"><i class="ri-download-2-line"></i>
+                    <p>Importer mes factures</p>
+                </a>
+            </div>
+        </div>
+        <div class="flex justify-center flex-col items-center mt-3 ">
+            <div class="flex flex-col gap-5 my-5 items-center w-full justify-center">
+
+
+
+                <div class="rounded bg-white flex justify-between w-full xl:w-[65%] py-1 px-4 flex-wrap">
+                    <a href="#">
+                        <p>Facture</p>
+                    </a>
+                    <a href="">
+                        <p>Avoir</p>
+                    </a>
+                    <a href="#" class="rounded-full py-1 px-5 text-blue-500 bg-blue-200">
+                        <p>Devis</p>
+                    </a>
+                    <a href="">
+                        <p>Bon de commandes</p>
+                    </a>
+                    <a href="../clients/clients.html">
+                        <p>Clients</p>
+                    </a>
+                    <a href="">
+                        <p>Fournisseur</p>
+                    </a>
+                    <a href="../article/article.html">
+                        <p>Article</p>
+                    </a>
+                </div>
+
+                <div class="flex justify-end w-full xl:w-[65%] my-2 gap-2 flex-wrap">
+
+                    <button class="cursor-pointer border border-blue-500 py-2 px-7 rounded-lg text-sm text-blue-500">
+                        <a href="../factureJunior/factureJunior.html">
+                            +
+                        Nouvelle facture
+                        </a>
+                        
+                    </button>
+
+                    <button class="cursor-pointer border border-blue-500 py-2 px-7 rounded-lg text-sm text-blue-500">
+                        <a href="../acompte/acompte.html">
+                            + 
+                            Créer un accompte
+                        </a>
+                        
+                    </button>
+
+
+                    <button class="bg-blue-900 py-1 px-7 rounded-lg text-sm text-white"><a href=""><i
+                                class="fa-solid fa-database"></i>
+                            Automatiser</a></button>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-10 w-full xl:w-[65%]">
+                    <div class="flex flex-col justify-between w-full py-2 px-4 flex-wrap bg-white rounded">
+                        <p>Payé</p>
+                        <p><span class="font-bold text-2xl relative">100 000 fcfa </span> <span
+                                class="absolute text-sm">HT</span></p>
+                        <p><span class="relative">100 000 fcfa </span> <span class="absolute text-[7px]">HT</span></p>
+                    </div>
+
+                    <div class="flex flex-col justify-between w-full py-2 px-4 flex-wrap bg-white rounded">
+                        <p>Payé</p>
+                        <p><span class="font-bold text-2xl relative">100 000 fcfa </span> <span
+                                class="absolute text-sm">HT</span></p>
+                        <p><span class="relative">100 000 fcfa </span> <span class="absolute text-[7px]">HT</span></p>
+                    </div>
+
+                    <div class="flex flex-col justify-between w-full py-2 px-4 flex-wrap bg-white rounded">
+                        <p>Payé</p>
+                        <p><span class="font-bold text-2xl relative">100 000 fcfa </span> <span
+                                class="absolute text-sm">HT</span></p>
+                        <p><span class="relative">100 000 fcfa </span> <span class="absolute text-[7px]">HT</span></p>
+                    </div>
+                </div>
+
+                <div class="w-full mb-3 lg:w-[65%] flex gap-3 flex-wrap">
+                    <div class="lg:w-[30%] bg-white py-1 px-3 rounded-lg">
+                        <p><i class="ri-calendar-todo-fill"></i> Filtrer</p>
+                    </div>
+
+                    <input type="text" class="lg:w-[50%] bg-white py-1 px-3 rounded-lg"
+                        placeholder="🔍 Rechercher par numéro, titre, client...">
+
+
+                    <select name="" id="" class="lg:w-[30%] bg-white px-2 py-1 rounded-lg outline-none">
+                        <option value="">Filtrer par état</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                    </select>
+
+
+                </div>
+                <div class="w-full overflow-x-scroll xl:w-[65%] shadow rounded-lg">
+                    <table class="w-full border-collapse bg-white rounded-lg overflow-x-scroll w-full shadow-sm">
+                        <thead>
+                            <tr class="text-gray-500">
+                                <th class="text-left px-6 py-4 font-semibold">Désignation</th>
+                                <th class="text-left px-6 py-4 font-semibold">Statut</th>
+                                <th class="text-left px-6 py-4 font-semibold">Montant HT</th>
+                                <th class="text-left px-6 py-4 font-semibold">Montant TTC</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr class="hover:bg-gray-50 transition">
+
+                                <td class="px-6 py-4">
+                                    <input type="checkbox" id="menu" class="peer hidden">
+
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="font-semibold text-sm">F-2023-0112</p>
+                                        <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                        <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                            2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                    </label>
+
+                                    <div class="fixed z-50 px-3 right-0 top-0 h-screen w-[100%] md:w-[50%] lg:w-225
+               translate-x-full bg-white shadow-lg
+               transition-transform duration-300
+               peer-checked:translate-x-0">
+
+
+                                        <div class="px-2 rounded-lg flex justify-between">
+
+                                            <div>
+                                                <p class="text-gray-500 text-[13px]">Document de facturation</p>
+
+                                                <div>
+                                                    <p class="font-bold">D-2023-0112</p>
+                                                    <p class="font-bold text-[10px]">Nom du client</p>
+                                                </div>
+
+
+
+                                                <div class="flex gap-5">
+                                                    <div class="flex gap-5 mb-1">
+                                                        <p class="relative text-[10px]"><span class="font-bold">10 000
+                                                                fcfa</span> <span class="absolute text-[7px]">HT</span>
+                                                        </p>
+                                                        <p class="relative text-[10px]"><span class="font-bold">10 000
+                                                                fcfa</span> <span class="absolute text-[7px]">HT</span>
+                                                        </p>
+                                                    </div>
+
+                                                    <p class="text-[10px] mb-5 font-bold"><i
+                                                            class="fa-regular fa-clock"></i> 13 mars 2023 <i
+                                                            class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col justify-start pt-3">
+                                                <div class="flex justify-center items-center gap-5 me-5">
+                                                    <p
+                                                        class="bg-blue-300 text-blue-900 w-fit py-1 px-3 rounded-full text-sm">
+                                                        Finalisé</p>
+                                                    <p class="font-bold text-lg text-blue-500 relative">•••</span> </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="flex justify-around  text-center px-23">
+                                            <div
+                                                class="border-b-2 border-blue-500 text-blue-500 text-[15px] w-[50%]">
+                                                <p>Prévisualisation</p>
+                                            </div>
+                                            <div class="text-gray-500 w-[50%]">
+                                                <p class="relative"><span>Relation</span><span
+                                                        class="absolute bottom-2"><i
+                                                            class="fa-regular fa-circle-question text-[13px]"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex flex-col justify-center items-center mt-20">
+                                            <div class="bg-white py-1 w-[80%] px-2 rounded-lg shadow-[3px_3px_10px_5px_rgba(0,0,0,0.25)]" w-[70%]">
+                                                <div
+                                                    class="flex justify-between items-center border-b border-gray-500 pb-3">
+                                                    <p class="text-[40px] text-blue-500 font-bold">Logo</p>
+                                                    <div class="flex flex-col gap-1">
+                                                        <p class="font-semibold text-xl text-blue-500 text-end">Devis
+                                                        </p>
+
+                                                        <div class="text-end text-[13px]">
+                                                            <p class="font-bold">Nom du client</p>
+                                                            <p>Bote postale et ville du client</p>
+                                                            <p>Location du client</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="flex justify-between items-center py-2">
+                                                        <div class="text-[13px]">
+                                                            <p class="font-bold">Nom du prestataire</p>
+                                                            <p>Boite postale et ville du prestataire</p>
+                                                            <p>Localisation du prestataire</p>
+                                                            <p>Numéro de tel prestataire</p>
+                                                            <p>Email du prestataire</p>
+                                                        </div>
+
+                                                        <div class="text-[13px]">
+                                                            <p>N° du document 000000</p>
+                                                            <p>Date d'émission 00-00-2025</p>
+                                                            <p>Date de validité 00-00-2025</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="overflow-auto">
+                                                        <table class="table-auto w-[800px]">
+                                                            <thead>
+                                                                <tr class="text-blue-500 ">
+                                                                    <th>#</th>
+                                                                    <th>Désignation et Description</th>
+                                                                    <th>Unité</th>
+                                                                    <th>Quantité</th>
+                                                                    <th>Prix u.HT</th>
+                                                                    <th>TVA</th>
+                                                                    <th>Montant</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="text-center border-t border-blue-300">
+                                                                    <td>1</td>
+                                                                    <td>Designation</td>
+                                                                    <td>Unité</td>
+                                                                    <td>0</td>
+                                                                    <td>1000</td>
+                                                                    <td>00%</td>
+                                                                    <td>00000</td>
+                                                                </tr>
+                                                                <tr class="text-center border-b border-blue-300">
+                                                                    <td></td>
+                                                                    <td>Description de l'article</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div class="flex justify-between items-center mt-3">
+                                                        <div>
+                                                            <div>
+                                                                <p class="font-bold">Delai de paiement</p>
+                                                                <p>30 jours</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="font-bold">Moyen de paiement</p>
+                                                                <p>Virement bancaire</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div>
+                                                            <p>Total HT</p>
+                                                            <p>TVA</p>
+                                                            <p>Total TTC</p>
+                                                        </div>
+
+                                                        <div>
+                                                            <p>10000</p>
+                                                            <p>2000</p>
+                                                            <p>12000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                    </label>
+                                </td>
+
+                                <td>
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="font-bold">10 000,00 fcfa</p>
+                                    </label>
+                                </td>
+
+                                <td>
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="font-bold">11 500,00 fcfa</p>
+                                    </label>
+                                </td>
+
+                                <td>
+                                    <label for="menu" class=" cursor-pointer"></label>
+                                </td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                    </label>
+                                </td>
+                            </tr>
+
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+
+                            <tr class="hover:bg-gray-50 transition">
+                                <td class="px-6 py-4">
+                                    <p class="font-semibold text-sm">F-2023-0112</p>
+                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                </td>
+
+                                <td>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">10 000,00 fcfa</p>
+                                </td>
+
+                                <td>
+                                    <p class="font-bold">11 500,00 fcfa</p>
+                                </td>
+
+                                <td></td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="100" class="px-4 py-3 text-gray-500">
+                                    <div class="flex items-center justify-end gap-6 text-sm">
+                                        <div class="flex items-center gap-2">
+                                            <span>Ligne par page</span>
+                                            <button class="flex items-center gap-1">
+                                                25
+                                                <i class="fa-solid fa-caret-down text-gray-700"></i>
+                                            </button>
+                                        </div>
+
+                                        <span>1–5 of 5</span>
+
+                                        <div class="flex items-center gap-3">
+                                            <button>
+                                                <i class="fa-solid fa-angle-left"></i>
+                                            </button>
+
+                                            <span>1</span>
+
+                                            <button>
+                                                <i class="fa-solid fa-angle-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+</body>
 
 </html>
