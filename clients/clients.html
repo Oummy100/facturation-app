@@ -59,13 +59,13 @@
                     <div class=" lg:border-r border-gray-400 md:pl-8">
                         <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
                         <div>
-                            <div><a class="flex gap-2 items-center" href=""><i class="fa-solid fa-file-import"></i>
+                            <div><a class="flex gap-2 items-center" href="../index.html"><i class="fa-solid fa-file-import"></i>
                                     <p>Facturation</p>
                                 </a></div>
-                            <div><a class="flex gap-2 items-center" href=""><i class="ri-folder-user-line text-xl"></i>
+                            <div><a class="flex gap-2 items-center" href="../article/article.html"><i class="ri-folder-user-line text-xl"></i>
                                     <p>Clients</p>
                                 </a></div>
-                            <div><a class="flex gap-2 items-center" href=""><i class="fa-regular fa-rectangle-list"></i>
+                            <div><a class="flex gap-2 items-center" href="../article/article.html"><i class="fa-regular fa-rectangle-list"></i>
                                     <p>Articles</p>
                                 </a></div>
                         </div>
@@ -140,13 +140,13 @@
             <div class=" lg:border-r border-gray-400 md:pl-8">
                 <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
                 <div>
-                    <div><a class="flex gap-2 items-center" href=""><i class="fa-solid fa-file-import"></i>
+                    <div><a class="flex gap-2 items-center" href="../index.html"><i class="fa-solid fa-file-import"></i>
                             <p>Facturation</p>
                         </a></div>
-                    <div><a class="flex gap-2 items-center" href=""><i class="ri-folder-user-line text-xl"></i>
+                    <div><a class="flex gap-2 items-center" href="../clients/clients.html"><i class="ri-folder-user-line text-xl"></i>
                             <p>Clients</p>
                         </a></div>
-                    <div><a class="flex gap-2 items-center" href=""><i class="fa-regular fa-rectangle-list"></i>
+                    <div><a class="flex gap-2 items-center" href="../article/article.html"><i class="fa-regular fa-rectangle-list"></i>
                             <p>Articles</p>
                         </a></div>
                 </div>
@@ -225,7 +225,7 @@
 
 
                 <div class="rounded bg-white flex justify-between w-full xl:w-[65%] py-1 px-4 flex-wrap">
-                    <a href="">
+                    <a href="../facture/facture.html">
                         <p>Facture</p>
                     </a>
                     <a href="">
@@ -237,20 +237,66 @@
                     <a href="">
                         <p>Bon de commandes</p>
                     </a>
-                    <a href=""  class="rounded-full py-1 px-5 text-blue-500 bg-blue-200">
+                    <a href="../clients/clients.html"  class="rounded-full py-1 px-5 text-blue-500 bg-blue-200">
                         <p>Clients</p>
                     </a>
                     <a href="">
                         <p>Fournisseur</p>
                     </a>
-                    <a href="">
+                    <a href="../article/article.html">
                         <p>Article</p>
                     </a>
                 </div>
 
                 <div class="flex justify-end w-full xl:w-[65%] my-2 gap-2 flex-wrap">
-                    <button class="border border-blue-500 py-1 px-7 rounded-lg text-sm text-blue-500"><a href="">+
-                            Nouvel article</a></button>
+                    <div>
+
+                        <input type="checkbox" id="menu" class="peer hidden">
+
+                        <label for="menu" class="cursor-pointer border border-blue-500 py-2 px-7 rounded-lg text-sm text-blue-500">
+                            +
+                            Nouveau client
+                        </label>
+
+                        <div class="fixed z-50 p-3 right-0 top-0 h-screen w-[100%] md:w-[50%] lg:w-225
+               translate-x-full bg-white shadow-lg
+               transition-transform duration-300
+               peer-checked:translate-x-0">
+                                <div class="absolute flex justify-between w-full">
+                            <label for="menu" class="cursor-pointer text-2xl flex items-center gap-2">
+                                <i class="fa-solid fa-xmark text-blue-500"></i>  <h2 class="text-xl font-bold">Créer un client</h2>
+                            </label>
+
+                            <button class="py-2 px-7 text-sm text-white bg-blue-500">Créer</button>
+                            </div>
+
+                            <div class="px-2 py-4 border border-blue-500 mt-[120px] rounded-lg">
+                               <div class="flex flex-col mb-2">
+                                <p class="font-bold text-[13px]">Désignation du client *</p>
+                                <input type="text" placeholder="Nom et prénom ou nom de l'entreprise" class="text-[13px] border px-1 py-2 rounded-lg border-gray-400 text-gray-500">
+                               </div>
+
+                               <div class="flex flex-col mb-2">
+                                <p class="font-bold text-[13px]">Localisation du client *</p>
+                                <input type="text" placeholder="Ville et pays du client" class="text-[13px] border px-1 py-2 rounded-lg border-gray-400 text-gray-500">
+                               </div>
+
+                               <div class="flex flex-col mb-2">
+                                <p class="font-bold text-[13px]">Boite postale du client *</p>
+                                <input type="text" placeholder="Boite postale" class="text-[13px] border px-1 py-2 rounded-lg border-gray-400 text-gray-500">
+                               </div>
+
+
+                               <div class="flex flex-col">
+                                <p class="font-bold text-[13px]">Description/Notes</p>
+                                <textarea placeholder="Désignation de l'article" class="text-[13px] border px-1 py-2 rounded-lg border-gray-400 text-gray-500 h-25"></textarea>
+                               </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
 
                     <button class="bg-blue-900 py-1 px-7 rounded-lg text-sm text-white"><a href=""><i class="fa-solid fa-database"></i>
                             Automatiser</a></button>

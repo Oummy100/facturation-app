@@ -59,13 +59,13 @@
                     <div class=" lg:border-r border-gray-400 md:pl-8">
                         <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
                         <div>
-                            <div><a class="flex gap-2 items-center" href=""><i class="fa-solid fa-file-import"></i>
+                            <div><a class="flex gap-2 items-center" href="../index.html"><i class="fa-solid fa-file-import"></i>
                                     <p>Facturation</p>
                                 </a></div>
-                            <div><a class="flex gap-2 items-center" href=""><i class="ri-folder-user-line text-xl"></i>
+                            <div><a class="flex gap-2 items-center" href="../clients/clients.html"><i class="ri-folder-user-line text-xl"></i>
                                     <p>Clients</p>
                                 </a></div>
-                            <div><a class="flex gap-2 items-center" href=""><i class="fa-regular fa-rectangle-list"></i>
+                            <div><a class="flex gap-2 items-center" href="../article/article.html"><i class="fa-regular fa-rectangle-list"></i>
                                     <p>Articles</p>
                                 </a></div>
                         </div>
@@ -140,13 +140,13 @@
             <div class=" lg:border-r border-gray-400 md:pl-8">
                 <p class="mb-2 text-gray-400">SUIVI & FACTURES</p>
                 <div>
-                    <div><a class="flex gap-2 items-center" href=""><i class="fa-solid fa-file-import"></i>
+                    <div><a class="flex gap-2 items-center" href="../index.html"><i class="fa-solid fa-file-import"></i>
                             <p>Facturation</p>
                         </a></div>
-                    <div><a class="flex gap-2 items-center" href=""><i class="ri-folder-user-line text-xl"></i>
+                    <div><a class="flex gap-2 items-center" href="../clients/clients.html"><i class="ri-folder-user-line text-xl"></i>
                             <p>Clients</p>
                         </a></div>
-                    <div><a class="flex gap-2 items-center" href=""><i class="fa-regular fa-rectangle-list"></i>
+                    <div><a class="flex gap-2 items-center" href="../article/article.html"><i class="fa-regular fa-rectangle-list"></i>
                             <p>Articles</p>
                         </a></div>
                 </div>
@@ -225,7 +225,7 @@
 
 
                 <div class="rounded bg-white flex justify-between w-full xl:w-[65%] py-1 px-4 flex-wrap">
-                    <a href="" class="rounded-full py-1 px-5 text-blue-500 bg-blue-200">
+                    <a href="#" class="rounded-full py-1 px-5 text-blue-500 bg-blue-200">
                         <p>Facture</p>
                     </a>
                     <a href="">
@@ -237,20 +237,27 @@
                     <a href="">
                         <p>Bon de commandes</p>
                     </a>
-                    <a href="">
+                    <a href="../clients/clients.html">
                         <p>Clients</p>
                     </a>
                     <a href="">
                         <p>Fournisseur</p>
                     </a>
-                    <a href="">
+                    <a href="../article/article.html">
                         <p>Article</p>
                     </a>
                 </div>
 
                 <div class="flex justify-end w-full xl:w-[65%] my-2 gap-2 flex-wrap">
-                    <button class="border border-blue-500 py-1 px-7 rounded-lg text-sm text-blue-500"><a href="">+
-                            Nouvel article</a></button>
+
+                    <button class="cursor-pointer border border-blue-500 py-2 px-7 rounded-lg text-sm text-blue-500">
+                        <a href="../factureJunior/factureJunior.html">
+                            +
+                        Nouvelle facture
+                        </a>
+                        
+                    </button>
+
 
                     <button class="bg-blue-900 py-1 px-7 rounded-lg text-sm text-white"><a href=""><i
                                 class="fa-solid fa-database"></i>
@@ -310,6 +317,206 @@
                         </thead>
 
                         <tbody>
+
+                            <tr class="hover:bg-gray-50 transition">
+
+                                <td class="px-6 py-4">
+                                    <input type="checkbox" id="menu" class="peer hidden">
+
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="font-semibold text-sm">F-2023-0112</p>
+                                        <p class="font-semibold text-blue-500 text-sm">John Doe</p>
+                                        <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
+                                            2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                    </label>
+
+                                    <div class="fixed z-50 px-3 right-0 top-0 h-screen w-[100%] md:w-[50%] lg:w-225
+               translate-x-full bg-white shadow-lg
+               transition-transform duration-300
+               peer-checked:translate-x-0">
+
+
+                                        <div class="px-2 rounded-lg flex justify-between">
+
+                                            <div>
+                                                <p class="text-gray-500 text-[13px]">Document de facturation</p>
+
+                                                <div>
+                                                    <p class="font-bold">D-2023-0112</p>
+                                                    <p class="font-bold text-[10px]">Nom du client</p>
+                                                </div>
+
+
+
+                                                <div class="flex gap-5">
+                                                    <div class="flex gap-5 mb-1">
+                                                        <p class="relative text-[10px]"><span class="font-bold">10 000
+                                                                fcfa</span> <span class="absolute text-[7px]">HT</span>
+                                                        </p>
+                                                        <p class="relative text-[10px]"><span class="font-bold">10 000
+                                                                fcfa</span> <span class="absolute text-[7px]">HT</span>
+                                                        </p>
+                                                    </div>
+
+                                                    <p class="text-[10px] mb-5 font-bold"><i
+                                                            class="fa-regular fa-clock"></i> 13 mars 2023 <i
+                                                            class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex flex-col justify-start pt-3">
+                                                <div class="flex justify-center items-center gap-5 me-5">
+                                                    <p
+                                                        class="bg-blue-300 text-blue-900 w-fit py-1 px-3 rounded-full text-sm">
+                                                        Finalisé</p>
+                                                    <p class="font-bold text-lg text-blue-500 relative">•••</span> </p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="flex justify-around  text-center px-23">
+                                            <div
+                                                class="border-b-2 border-blue-500 text-blue-500 text-[15px] w-[50%]">
+                                                <p>Prévisualisation</p>
+                                            </div>
+                                            <div class="text-gray-500 w-[50%]">
+                                                <p class="relative"><span>Relation</span><span
+                                                        class="absolute bottom-2"><i
+                                                            class="fa-regular fa-circle-question text-[13px]"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="flex flex-col justify-center items-center mt-20">
+                                            <div class="bg-white py-1 w-[80%] px-2 rounded-lg shadow-[3px_3px_10px_5px_rgba(0,0,0,0.25)]" w-[70%]">
+                                                <div
+                                                    class="flex justify-between items-center border-b border-gray-500 pb-3">
+                                                    <p class="text-[40px] text-blue-500 font-bold">Logo</p>
+                                                    <div class="flex flex-col gap-1">
+                                                        <p class="font-semibold text-xl text-blue-500 text-end">Devis
+                                                        </p>
+
+                                                        <div class="text-end text-[13px]">
+                                                            <p class="font-bold">Nom du client</p>
+                                                            <p>Bote postale et ville du client</p>
+                                                            <p>Location du client</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <div class="flex justify-between items-center py-2">
+                                                        <div class="text-[13px]">
+                                                            <p class="font-bold">Nom du prestataire</p>
+                                                            <p>Boite postale et ville du prestataire</p>
+                                                            <p>Localisation du prestataire</p>
+                                                            <p>Numéro de tel prestataire</p>
+                                                            <p>Email du prestataire</p>
+                                                        </div>
+
+                                                        <div class="text-[13px]">
+                                                            <p>N° du document 000000</p>
+                                                            <p>Date d'émission 00-00-2025</p>
+                                                            <p>Date de validité 00-00-2025</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="overflow-auto">
+                                                        <table class="table-auto w-[800px]">
+                                                            <thead>
+                                                                <tr class="text-blue-500 ">
+                                                                    <th>#</th>
+                                                                    <th>Désignation et Description</th>
+                                                                    <th>Unité</th>
+                                                                    <th>Quantité</th>
+                                                                    <th>Prix u.HT</th>
+                                                                    <th>TVA</th>
+                                                                    <th>Montant</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr class="text-center border-t border-blue-300">
+                                                                    <td>1</td>
+                                                                    <td>Designation</td>
+                                                                    <td>Unité</td>
+                                                                    <td>0</td>
+                                                                    <td>1000</td>
+                                                                    <td>00%</td>
+                                                                    <td>00000</td>
+                                                                </tr>
+                                                                <tr class="text-center border-b border-blue-300">
+                                                                    <td></td>
+                                                                    <td>Description de l'article</td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                    <div class="flex justify-between items-center mt-3">
+                                                        <div>
+                                                            <div>
+                                                                <p class="font-bold">Delai de paiement</p>
+                                                                <p>30 jours</p>
+                                                            </div>
+                                                            <div>
+                                                                <p class="font-bold">Moyen de paiement</p>
+                                                                <p>Virement bancaire</p>
+                                                            </div>
+                                                        </div>
+
+                                                        <div>
+                                                            <p>Total HT</p>
+                                                            <p>TVA</p>
+                                                            <p>Total TTC</p>
+                                                        </div>
+
+                                                        <div>
+                                                            <p>10000</p>
+                                                            <p>2000</p>
+                                                            <p>12000</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                    </label>
+                                </td>
+
+                                <td>
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="font-bold">10 000,00 fcfa</p>
+                                    </label>
+                                </td>
+
+                                <td>
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="font-bold">11 500,00 fcfa</p>
+                                    </label>
+                                </td>
+
+                                <td>
+                                    <label for="menu" class=" cursor-pointer"></label>
+                                </td>
+
+                                <td class="px-6 py-4 flex justify-end">
+                                    <label for="menu" class=" cursor-pointer">
+                                        <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
+                                    </label>
+                                </td>
+                            </tr>
+
+
                             <tr class="hover:bg-gray-50 transition">
                                 <td class="px-6 py-4">
                                     <p class="font-semibold text-sm">F-2023-0112</p>
@@ -319,7 +526,7 @@
                                 </td>
 
                                 <td>
-                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
                                 </td>
 
                                 <td>
@@ -346,7 +553,7 @@
                                 </td>
 
                                 <td>
-                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
                                 </td>
 
                                 <td>
@@ -373,34 +580,7 @@
                                 </td>
 
                                 <td>
-                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
-                                </td>
-
-                                <td>
-                                    <p class="font-bold">10 000,00 fcfa</p>
-                                </td>
-
-                                <td>
-                                    <p class="font-bold">11 500,00 fcfa</p>
-                                </td>
-
-                                <td></td>
-
-                                <td class="px-6 py-4 flex justify-end">
-                                    <p class="flex items-center justify-center text-3xl text-gray-500">•••</p>
-                                </td>
-                            </tr>
-
-                            <tr class="hover:bg-gray-50 transition">
-                                <td class="px-6 py-4">
-                                    <p class="font-semibold text-sm">F-2023-0112</p>
-                                    <p class="font-semibold text-blue-500 text-sm">John Doe</p>
-                                    <p class="text-[11px] text-gray-500"><i class="fa-regular fa-clock"></i> 13 mars
-                                        2023 <i class="ri-calendar-todo-fill"></i> 13 mars 2023</p>
-                            </td>
-
-                                <td>
-                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
                                 </td>
 
                                 <td>
@@ -427,7 +607,7 @@
                                 </td>
 
                                 <td>
-                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
                                 </td>
 
                                 <td>
@@ -454,7 +634,7 @@
                                 </td>
 
                                 <td>
-                                        <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
+                                    <p class="rounded-full py-1 px-5 text-blue-500 bg-blue-200 w-fit">Finalisé</p>
                                 </td>
 
                                 <td>
